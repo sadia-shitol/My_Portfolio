@@ -37,7 +37,7 @@ export function About() {
             </p>
 
             <div className="flex flex-wrap gap-3 mb-8">
-              {["JavaScript", "React", "Next.js", "Node.js", "Tailwind CSS"].map((skill) => (
+              {["JavaScript", "React", "Next.js", "Node.js", "Tailwind CSS","TypeScript"].map((skill) => (
                 <Card key={skill} className="bg-white border border-forest-100">
                   <CardContent className="py-2 px-1 text-forest-900">{skill}</CardContent>
                 </Card>
@@ -53,9 +53,9 @@ export function About() {
               <div className="flex gap-2">
                 {[
                   { icon: <Github size={20} />, label: "GitHub" ,url:"https://github.com/sadia-shitol"},
-                  { icon: <Linkedin size={20} />, label: "LinkedIn", url:"www.linkedin.com/in/sadia-bintay-mostafiz-b4177a267" },
-                  { icon: <Instagram size={20} />, label: "Instagram" },
-                  { icon: <Mail size={20} />, label: "Email" },
+                  { icon: <Linkedin size={20} />, label: "LinkedIn", url:"https://www.linkedin.com/in/sadia-bintay-mostafiz-b4177a267" },
+                  { icon: <Instagram size={20} />, label: "Instagram" ,url:"https://www.instagram.com/_shitol_sadia/"},
+                  { icon: <Mail size={20} />, label: "Email", url: "mailto:shitol3080@gmail.com" },
                 ].map((social, index) => (
                   <Button
                     key={index}
