@@ -1,27 +1,24 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Download, Mail, Github, Linkedin, Twitter } from "lucide-react"
+import { Download, Mail, Github, Linkedin, Twitter, Instagram } from "lucide-react"
 
 export function About() {
   return (
-    <section id="about" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
+    <section id="about" className="px-0 ml-0 py-20 bg-white flex justify-center">
+      <div className="container mx-auto px-0 left-0">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-forest-900">
           About <span className="text-forest-700">Me</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="flex justify-center md:justify-end">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-forest-100">
-              {/* Using the image from the public/images folder */}
-              <Image
-                src="/images/sadiashitol.jpeg"
-                alt="Sadia Bintay Mostafiz"
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center ml-0 left-0">
+          <div className="flex justify-center md:justify-end ml-0">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4  border-forest-200 transform translate-x-2 ml-0">
+
+              <Image  src="/images/portfolio.jpg"  alt="Sadia Bintay Mostafiz"
                 fill
                 className="object-cover"
-                priority
-              />
+                priority/>
             </div>
           </div>
 
@@ -42,7 +39,7 @@ export function About() {
             <div className="flex flex-wrap gap-3 mb-8">
               {["JavaScript", "React", "Next.js", "Node.js", "Tailwind CSS"].map((skill) => (
                 <Card key={skill} className="bg-white border border-forest-100">
-                  <CardContent className="py-2 px-3 text-forest-900">{skill}</CardContent>
+                  <CardContent className="py-2 px-1 text-forest-900">{skill}</CardContent>
                 </Card>
               ))}
             </div>
@@ -55,9 +52,9 @@ export function About() {
 
               <div className="flex gap-2">
                 {[
-                  { icon: <Github size={20} />, label: "GitHub" },
-                  { icon: <Linkedin size={20} />, label: "LinkedIn" },
-                  { icon: <Twitter size={20} />, label: "Twitter" },
+                  { icon: <Github size={20} />, label: "GitHub" ,url:"https://github.com/sadia-shitol"},
+                  { icon: <Linkedin size={20} />, label: "LinkedIn", url:"www.linkedin.com/in/sadia-bintay-mostafiz-b4177a267" },
+                  { icon: <Instagram size={20} />, label: "Instagram" },
                   { icon: <Mail size={20} />, label: "Email" },
                 ].map((social, index) => (
                   <Button
@@ -67,7 +64,10 @@ export function About() {
                     aria-label={social.label}
                     className="border-forest-200 text-forest-900 hover:bg-forest-900/10"
                   >
-                    {social.icon}
+                      <a href={social.url} target="_blank" rel="noopener noreferrer">
+                      {social.icon}
+                    </a>
+                    {/* {social.icon} */}
                   </Button>
                 ))}
               </div>

@@ -5,14 +5,17 @@ import { Skills } from "@/components/skills"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import { Navbar } from "@/components/navbar"
-
+import './globals.css'
 export default function Home() {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-hc-sreen bg-background">
       <Navbar />
       <main>
         <Hero />
-        <About />
+        <div className="left-0 mx-0">
+        <About/>
+        </div>
+        
         <Projects />
         <Skills />
         <Contact />
