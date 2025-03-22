@@ -48,6 +48,7 @@ export function About() {
               <Button className="gap-2 bg-forest-900 hover:bg-forest-800 text-white" >
               <a href="https://drive.google.com/file/d/1E0XCgH2wUtZrAFCJ3cTXcF_0M1eNUUNC/view" download="Sadia_Bintay_Mostafiz_CV.pdf" className=" flex items-center gap-2">
                 <Download size={16} />
+                Download CV
               </a>
               </Button>
 

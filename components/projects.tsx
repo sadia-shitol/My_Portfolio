@@ -6,29 +6,29 @@ import { Badge } from "@/components/ui/badge"
 
 const projects = [
   {
-    title: "E-Commerce Platform",
-    description: "A full-featured online store with payment processing, user authentication, and inventory management.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
-    demoUrl: "#",
-    codeUrl: "#",
+    title: "The Green Solution",
+    description: " A QnA-based web application for farmers and agronomists, where farmers can ask questions and agronomists can post the answers to those questions.",
+    image: "./images/TheGreenSolution.png",
+    tags: ["React", "ExpressJS", "MongoDB", "Tensorflow.js"],
+    demoUrl: "https://thegreensolution.netlify.app/",
+    codeUrl: "https://github.com/sadia-shitol/The-Green-Solution",
   },
   {
-    title: "Task Management App",
+    title: "Ekhonni",
     description:
-      "A collaborative task management tool with real-time updates, drag-and-drop interface, and team features.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["React", "Firebase", "Redux", "Material UI"],
+      "An e-commerce platform where sellers can post ads of their products and buyers compete in Auctions through online bidding.",
+    image: "./images/Ekhonni.jpg",
+    tags: ["SpringBoot", "NextJS", "Tailwind CSS","PostGreSQL"],
     demoUrl: "#",
-    codeUrl: "#",
+    codeUrl: "https://github.com/sadia-shitol/ekhonni-MIST",
   },
   {
-    title: "Portfolio Website",
-    description: "A responsive portfolio website showcasing projects and skills with a modern design.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["Next.js", "Tailwind CSS", "Framer Motion"],
-    demoUrl: "#",
-    codeUrl: "#",
+    title: "FurniHaven",
+    description: "A mobile app that connects consumers and sellers in the furniture industry, integrating AR technology for real-time product visualization and an AI recommendation system for personalized suggestions.",
+    image: "./images/FurniHaven.jpg",
+    tags: ["Flutter", "Firebase"],
+    demoUrl: "https://youtu.be/PvLx2j3GaVg?si=oxGg3s3S38MoiFDe",
+    codeUrl: "https://github.com/sadia-shitol/FurniHaven_SDP-II",
   },
 ]
 
