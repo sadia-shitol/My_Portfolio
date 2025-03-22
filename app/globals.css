@@ -101,7 +101,7 @@ body {
   }
 }
 
-/* //for the floating dhongdhang */
+/* //for the floating dhongdhang bg */
 @keyframes floating {
   0% {
     transform: translateY(0) rotate(0deg);

@@ -14,7 +14,7 @@ export default function AnimatedBackground() {
   return (
     <div className="fixed inset-0 overflow-hidden -z-10">
       {/* Moved from 'top-20' to 'bottom-0' */}
-      <ul className="absolute bottom-0 left-0 w-full h-1/2">
+      <ul className="absolute -mt-96 bottom-0 left-0 w-full h-1/2">
         {circles.map((_, index) => {
           const size = [30, 90, 20, 40, 20, 50, 20, 25, 54, 100, 100, 100, 50][index];
           const delay = [0, 2, 4, 0, 0, 3, 3, 15, 2, 0, 0, 0, 0][index];

@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-
+import AnimatedBackground from "./animated-background"
 import { useState } from "react"
 import { Mail, MapPin, Phone, Send } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -48,6 +48,7 @@ export function Contact() {
 
   return (
     <section id="contact" className="py-20 bg-white">
+      <AnimatedBackground/>
       <div className="container mx-auto px-4">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-forest-900">
           Get In <span className="text-forest-700">Touch</span>
