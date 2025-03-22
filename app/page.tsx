@@ -5,6 +5,7 @@ import { Skills } from "@/components/skills"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import { Navbar } from "@/components/navbar"
+import AnimatedBackground from "@/components/animated-background"
 import './globals.css'
 export default function Home() {
   return (
@@ -12,13 +13,12 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <div className="left-0 mx-0">
         <About/>
-        </div>
-        
         <Projects />
         <Skills />
         <Contact />
+        <AnimatedBackground/>
+        
       </main>
       <Footer />
     </div>
