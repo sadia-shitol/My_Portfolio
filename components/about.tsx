@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { Download, Mail, Github, Linkedin, Twitter, Instagram } from "lucide-react"
+import { Download, Mail, Github, Linkedin, Instagram } from "lucide-react"
 
 export function About() {
   return (
@@ -45,9 +45,11 @@ export function About() {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              <Button className="gap-2 bg-forest-900 hover:bg-forest-800 text-white">
+              <Button className="gap-2 bg-forest-900 hover:bg-forest-800 text-white" >
+              <a href="/public/CV.pdf" download="Sadia_Bintay_Mostafiz_CV.pdf" className=" flex items-center gap-2">
                 <Download size={16} />
                 Download CV
+              </a>
               </Button>
 
               <div className="flex gap-2">
