@@ -67,7 +67,7 @@ export function About() {
                       <a href={social.url} target="_blank" rel="noopener noreferrer">
                       {social.icon}
                     </a>
-                    {/* {social.icon} */}
+                    
                   </Button>
                 ))}
               </div>

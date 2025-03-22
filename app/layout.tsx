@@ -3,8 +3,8 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Sadia Shitol',
-  description: 'Created with v0',
-  generator: 'v0.dev',
+  description: 'Portfolio of Sadia Shitol',
+  //generator: 'v0.dev',
 }
 
 export default function RootLayout({

@@ -66,7 +66,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium text-forest-900">Email</h3>
-                  <p className="text-sm text-forest-900/80">hello@example.com</p>
+                  <p className="text-sm text-forest-900/80">shitol3080@gmail.com</p>
                 </div>
               </CardContent>
             </Card>
@@ -78,7 +78,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium text-forest-900">Phone</h3>
-                  <p className="text-sm text-forest-900/80">+1 (555) 123-4567</p>
+                  <p className="text-sm text-forest-900/80">+88 01992-131208</p>
                 </div>
               </CardContent>
             </Card>
@@ -90,7 +90,7 @@ export function Contact() {
                 </div>
                 <div>
                   <h3 className="font-medium text-forest-900">Location</h3>
-                  <p className="text-sm text-forest-900/80">San Francisco, CA</p>
+                  <p className="text-sm text-forest-900/80">84/8-1, Uttor Bhashantek, Mirpur-14, Dhaka -1206</p>
                 </div>
               </CardContent>
             </Card>
