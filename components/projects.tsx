@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 import { ExternalLink, Github } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
@@ -19,12 +20,12 @@ const projects = [
       "An e-commerce platform where sellers can post ads of their products and buyers compete in Auctions through online bidding.",
     image: "./images/Ekhonni.jpg",
     tags: ["SpringBoot", "NextJS", "Tailwind CSS","PostGreSQL"],
-    demoUrl: "#",
+    demoUrl: "./Project Demo Videos/Ekhonni_Demo.mp4",
     codeUrl: "https://github.com/sadia-shitol/ekhonni-MIST",
   },
   {
     title: "FurniHaven",
-    description: "A mobile app that connects consumers and sellers in the furniture industry, integrating AR technology for real-time product visualization and an AI recommendation system for personalized suggestions.",
+    description: "A mobile app that connects consumers and sellers in the furniture industry, integrating AR technology and AI recommendation system.",
     image: "./images/FurniHaven.jpg",
     tags: ["Flutter", "Firebase"],
     demoUrl: "https://youtu.be/PvLx2j3GaVg?si=oxGg3s3S38MoiFDe",
@@ -89,9 +90,17 @@ export function Projects() {
         </div>
 
         <div className="text-center mt-12">
-          <Button variant="outline" size="lg" className="border-forest-200 text-forest-900 hover:bg-forest-900/10">
-            View All Projects
+       
+        <Button
+            variant="outline"
+            size="lg"
+            className="border-forest-200 text-forest-900 hover:bg-forest-900/10"
+            asChild
+          >
+            <Link href="./projects">View All Projects</Link>
           </Button>
+        
+          
         </div>
       </div>
     </section>

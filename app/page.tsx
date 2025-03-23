@@ -9,7 +9,7 @@ import AnimatedBackground from "@/components/animated-background"
 import './globals.css'
 export default function Home() {
   return (
-    <div className="min-hc-sreen bg-background">
+    <div className="min-hc-sreen">
       <Navbar />
       <main>
         <Hero />
