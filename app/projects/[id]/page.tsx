@@ -10,7 +10,6 @@ const projects = [
   {
     id: "greenSolution",
     title: "The Green Solution",
-    description: " A QnA-based web application for farmers and agronomists, where farmers can ask questions and agronomists can post the answers to those questions.",
     image: "../images/TheGreenSolution.png",
     tags: ["React", "ExpressJS", "MongoDB", "Tensorflow.js"],
     demoUrl: "https://thegreensolution.netlify.app/",
@@ -18,61 +17,62 @@ const projects = [
     
     detailsUrl: "projects/greenSolution",
     longDescription:
-    "This e-commerce platform provides a complete solution for online retailers. It features a responsive design, secure payment processing through Stripe, user authentication with JWT, and a comprehensive inventory management system. The admin dashboard allows store owners to track sales, manage products, and handle customer inquiries.",
-    features: [
-      "User authentication and authorization",
-      "Product search and filtering",
-      "Shopping cart and checkout process",
-      "Payment processing with Stripe",
-      "Order tracking and history",
-      "Admin dashboard for inventory management",
+   " The Green Solution is a QnA based web application which bridges the gap between farmers and agronomists. On this platform, farmers will be able to ask questions about the problems they face daily during crop production and get solutions from agronomists directly. Farmers of our country are not up-to-date with the latest agriculture related research and studies. As such, they face difficulties in maximizing their yield. Furthermore, no such platform exists where farmers can get tailored answers to their problems. It is imperative that farmers get access to the latest agricultural information and techniques, and are able to find solutions to their problems. This web application acts as an online platform for the agricultural community and bridge the gap between farmers and agronomists, ensuring that farmers get personalized help from experts to solve their problems.",
+
+   features: [
+      "Account Creation, Login and Authentication : Enabling users to create and login to their accounts, and tracking type of user (farmer or agronomist).",
+      "Question and Answer Submission : Submission of questions from farmers and answers from agronomists into database.",
+      "Question and Answer Fetching : Fetching questions and answers from database for viewing.",
+      "Voice to Text : Enabling users to ask questions using voice in their native language (Bangla).",
+      "Native Language Support : Translation of web content from English to Bangla and vice versa.",
+      "Answer Rating : Enabling users to rate answers of agronomists.",
+      "Answer Editing : Enabling agronomists to update their answers",
+      "Relevant Question Finding (using NLP) : Using Natural Language Processing to find questions relevant to currently entered question."
     ],
     challenges: [
-      "Implementing secure payment processing",
-      "Creating a responsive design for all devices",
-      "Optimizing database queries for performance",
-      "Building a comprehensive admin dashboard",
-      "Ensuring data security and privacy",
+      "SMS Notification for Farmers has not been integrated",
+      "Version History has not been implemented for Answer Editing",
+      "No Mobile App implementation"
     ],
     solutions: [
-      "Integrated Stripe API with custom hooks for payment processing",
-      "Used Tailwind CSS with custom breakpoints for responsive design",
-      "Implemented database indexing and query optimization",
-      "Created a modular dashboard with role-based access control",
-      "Applied encryption and secure authentication practices",
+      "Addition of SMS Notification",
+      "AI generated solutions",
+      "Development of mobile app",
+      "Answer Editing with Version History"
     ],
   },
   {
     id:"ekhonni",
     title: "Ekhonni",
-    detailsUrl: "projects/ekhonni",
-    description:
-      "An e-commerce platform where sellers can post ads of their products and buyers compete in Auctions through online bidding.",
     image: "../images/Ekhonni.jpg",
     tags: ["SpringBoot", "NextJS", "Tailwind CSS","PostGreSQL"],
     demoUrl: "https://drive.google.com/file/d/1jMoBRS2WIZR7uoH9tmdsuD9gJb5eYX-d/view?t=1",
     codeUrl: "https://github.com/sadia-shitol/ekhonni-MIST",
+    detailsUrl: "projects/ekhonni",
+    longDescription:
+      " Ekhonni is an online eCommerce auction platform where users can advertise their products for sale and other users can compete in an online auction to buy those products. The seller can choose a buyer whom he will sell his product to. Ekhonni provides the seller with the choice to control the visibility of bidding, along with the ability to revert and choose a different buyer. This platform provides an interactive experience for buying and selling their products with the integration of a payment gateway service, along with robust product filtering, sorting, and dynamic searching. Integration of tools such as SWR allows users to view bidding operations and search products dynamically with changes made to the database reflected in the user interface instantaneously. Ekhonni functions as an online marketplace that prioritizes security and ease of use for both buyers and sellers, providing an interactive and dynamic platform for bidding.",
+    
     features: [
-      "Drag-and-drop task management",
-      "Real-time updates and notifications",
-      "Team collaboration tools",
-      "Project and task filtering",
-      "Deadline tracking and reminders",
-      "Detailed reporting and analytics",
+      "Authorization and Authentication with SpringBoot Security and NextAuth",
+      "Filtering and dynamic searching and sorting",
+      "Bidding Integrated with SWR",
+      "SSLCOMMERZ payment gateway",
+      "Docker Scripting",
+      "Cypress Testing",
+      "Liquibase integration"
     ],
     challenges: [
-      "Implementing real-time updates across devices",
-      "Creating an intuitive drag-and-drop interface",
-      "Managing complex state across the application",
-      "Ensuring data consistency with multiple users",
-      "Building a responsive and accessible UI",
+      "Can not make predictions from product databases",
+      "Can not interpret and understand the semantics of search queries",
+      "No relevant search result",
+      "No user information edit permission"
     ],
     solutions: [
-      "Used Firebase Realtime Database for instant updates",
-      "Implemented React DnD for intuitive drag-and-drop",
-      "Applied Redux for centralized state management",
-      "Created custom middleware for data synchronization",
-      "Built with Material UI components for accessibility",
+      "Improving product search using Deep Learning",
+      "Hosting and Deployment",
+      "Multiple Image Storage ",
+      "Update Product Details",
+      "Mobile App Implementation",
     ],
   },
   {
@@ -85,14 +85,13 @@ const projects = [
     codeUrl: "https://github.com/sadia-shitol/FurniHaven_SDP-II",
     detailsUrl: "projects/furnihaven",
     longDescription:
-      "This portfolio website showcases professional work and skills with a clean, modern design. Built with Next.js and Tailwind CSS, it features smooth animations, responsive layouts for all devices, and optimized performance. The site includes sections for projects, skills, about information, and contact details.",
-    features: [
-      "Responsive design for all devices",
-      "Animated page transitions",
-      "Dark/light mode toggle",
-      "Project showcase with filtering",
-      "Contact form with validation",
-      "Performance optimized with Next.js",
+"The demand for diverse furniture options has grown significantly, yet many consumers struggle to find pieces that suit their style and space. At the same time, sellers face challenges in reaching a broader audience due to limited visibility and competition in the online marketplace. Despite the rapid growth of online shopping, a major market gap remains—buyers often hesitate to purchase furniture without seeing how it fits in their home.  FurniHaven bridges this gap by offering a wide variety of furniture, empowering sellers to expand their reach, and integrating AR technology to help customers visualize products in real-time. By combining technology with a user-centric approach, we are revolutionizing the furniture shopping experience, making it more accessible, engaging, and seamless for everyone.",
+          features: [
+      "Secure Registration & Profile Management:  Ensures a safe sign-up process and allows users to manage their personal information effortlessly.",
+      "Multilingual Support: Seamless Furniture Browsing & Purchasing – Simplifies the shopping experience with intuitive navigation, easy selection, and a smooth checkout process can easily be done using both English and Bangla language.",
+      "AR-Based Visualization: Augmented reality technology was used to visualize the placement of a furniture and 360 degree view of products.",
+      "Project showcase with filtering: Personalized recommendations was implemented using AI and search result can be filtered based on price, brand and cost.",
+      "Messaging Systems: Sellers and customers can easily communicate with each other.",
     ],
     challenges: [
       "Creating smooth animations without affecting performance",
@@ -102,11 +101,11 @@ const projects = [
       "Designing an intuitive and engaging user experience",
     ],
     solutions: [
-      "Used Framer Motion for optimized animations",
-      "Applied Tailwind CSS with custom responsive design system",
-      "Implemented semantic HTML and Next.js best practices for SEO",
-      "Utilized Next.js Image component for optimized images",
-      "Created a clean, intuitive UI with user testing feedback",
+      "VAriations in Response Times on different functionalities",
+      "Seller Operation Efficiency",
+      "AR Rendering Performance",
+      "Device dependency",
+      "Network sensitivity"
     ],
   },
   {
@@ -174,39 +173,6 @@ const projects = [
       "Used server-side rendering and caching for performance",
     ],
   },
-  {
-    id: "fitnessapp",
-    title: "Fitness Tracking App",
-    description: "A comprehensive fitness application for tracking workouts, nutrition, and progress over time.",
-    longDescription:
-      "This fitness tracking application helps users achieve their health goals by monitoring workouts, nutrition, and overall progress. It provides customizable workout plans, nutrition tracking with a food database, and visual representations of progress over time. The app includes features like workout timers, exercise demonstrations, and social sharing for accountability.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["React Native", "Firebase", "Redux", "Chart.js", "Nutritionix API"],
-    demoUrl: "#",
-    codeUrl: "#",
-    features: [
-      "Workout tracking and planning",
-      "Nutrition logging and analysis",
-      "Progress visualization with charts",
-      "Exercise library with demonstrations",
-      "Goal setting and achievement tracking",
-      "Social sharing and challenges",
-    ],
-    challenges: [
-      "Creating an extensive exercise and nutrition database",
-      "Building intuitive data visualization for progress tracking",
-      "Implementing personalized workout recommendations",
-      "Designing an engaging user experience for regular use",
-      "Ensuring data accuracy for health metrics",
-    ],
-    solutions: [
-      "Integrated with Nutritionix API for comprehensive food database",
-      "Used Chart.js for customizable progress visualization",
-      "Implemented machine learning for personalized recommendations",
-      "Applied gamification elements for user engagement",
-      "Created validation systems for accurate health data entry",
-    ],
-  },
 ]
 
 export default function ProjectDetailPage({ params }: { params: { id: string } }) {
@@ -236,7 +202,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
   }
 
   return (
-    <main className="min-h-screen bg-white pt-24 pb-16">
+    <main className="min-h-screen bg-white pt-12 pb-16">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="flex items-center mb-8">
           <Link href="/projects" className="mr-4">
@@ -290,8 +256,9 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             <Card>
+              {/* challenges variable used for Limitations  */}
               <CardContent className="pt-6">
-                <h3 className="text-xl font-bold text-forest-900 mb-4">Challenges</h3>
+                <h3 className="text-xl font-bold text-forest-900 mb-4">Limitations</h3>
                 <ul className="space-y-2">
                   {project.challenges.map((challenge, index) => (
                     <li key={index} className="flex items-start">
@@ -305,7 +272,8 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
 
             <Card>
               <CardContent className="pt-6">
-                <h3 className="text-xl font-bold text-forest-900 mb-4">Solutions</h3>
+                {/* Solution variable used for Future Scope */}
+                <h3 className="text-xl font-bold text-forest-900 mb-4">Future Scope</h3>
                 <ul className="space-y-2">
                   {project.solutions.map((solution, index) => (
                     <li key={index} className="flex items-start">

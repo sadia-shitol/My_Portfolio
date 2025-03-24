@@ -55,7 +55,7 @@ const projects = [
     title: "Through The Rythm of Life!",
     description: "The journey of a programmer who once dreamed of becoming an artist but chose the path of a software engineer instead. The project explores her daily life as a programmer while reminiscing about the creative life she left behind for the sake of reality.",
     image: "../images/Blender.jpg?height=400&width=600",
-    tags: ["Blender"],
+    tags: ["Blender","3D Graphics"],
     demoUrl: "https://drive.google.com/file/d/1wlNPVvP07GkZYxjPVpezDsw8X3lGjfV1/view?t=1",
     codeUrl: "https://github.com/sadia-shitol/Through-The-Rythm-of-Life",
      detailsUrl: "projects/rythmofLife"
@@ -65,7 +65,7 @@ const projects = [
 export default function ProjectsPage() {
   return (
     <div className="min-hc-screen bg-background">
-    <main className="min-h-screen bg-white pt-24 pb-16">
+    <main className="min-h-screen bg-white pt-12 pb-16">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="flex items-center mb-8">
           <Link href="/" className="mr-4">
