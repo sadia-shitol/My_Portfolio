@@ -8,15 +8,17 @@ import { Card, CardContent } from "@/components/ui/card"
 // This would typically come from a database or CMS
 const projects = [
   {
-    id: "ecommerce",
-    title: "E-Commerce Platform",
-    description: "A full-featured online store with payment processing, user authentication, and inventory management.",
+    id: "greenSolution",
+    title: "The Green Solution",
+    description: " A QnA-based web application for farmers and agronomists, where farmers can ask questions and agronomists can post the answers to those questions.",
+    image: "../images/TheGreenSolution.png",
+    tags: ["React", "ExpressJS", "MongoDB", "Tensorflow.js"],
+    demoUrl: "https://thegreensolution.netlify.app/",
+    codeUrl: "https://github.com/sadia-shitol/The-Green-Solution",
+    
+    detailsUrl: "projects/greenSolution",
     longDescription:
-      "This e-commerce platform provides a complete solution for online retailers. It features a responsive design, secure payment processing through Stripe, user authentication with JWT, and a comprehensive inventory management system. The admin dashboard allows store owners to track sales, manage products, and handle customer inquiries.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS", "MongoDB", "Redux"],
-    demoUrl: "#",
-    codeUrl: "#",
+    "This e-commerce platform provides a complete solution for online retailers. It features a responsive design, secure payment processing through Stripe, user authentication with JWT, and a comprehensive inventory management system. The admin dashboard allows store owners to track sales, manage products, and handle customer inquiries.",
     features: [
       "User authentication and authorization",
       "Product search and filtering",
@@ -41,16 +43,15 @@ const projects = [
     ],
   },
   {
-    id: "taskmanager",
-    title: "Task Management App",
+    id:"ekhonni",
+    title: "Ekhonni",
+    detailsUrl: "projects/ekhonni",
     description:
-      "A collaborative task management tool with real-time updates, drag-and-drop interface, and team features.",
-    longDescription:
-      "This task management application helps teams organize their work efficiently. It features a drag-and-drop interface for easy task prioritization, real-time updates using Firebase, and comprehensive team collaboration tools. Users can create projects, assign tasks, set deadlines, and track progress through an intuitive dashboard.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["React", "Firebase", "Redux", "Material UI", "React DnD", "Jest"],
-    demoUrl: "#",
-    codeUrl: "#",
+      "An e-commerce platform where sellers can post ads of their products and buyers compete in Auctions through online bidding.",
+    image: "../images/Ekhonni.jpg",
+    tags: ["SpringBoot", "NextJS", "Tailwind CSS","PostGreSQL"],
+    demoUrl: "https://drive.google.com/file/d/1jMoBRS2WIZR7uoH9tmdsuD9gJb5eYX-d/view?t=1",
+    codeUrl: "https://github.com/sadia-shitol/ekhonni-MIST",
     features: [
       "Drag-and-drop task management",
       "Real-time updates and notifications",
@@ -75,15 +76,16 @@ const projects = [
     ],
   },
   {
-    id: "portfolio",
-    title: "Portfolio Website",
-    description: "A responsive portfolio website showcasing projects and skills with a modern design.",
+    id:"furnihaven",
+    title: "FurniHaven",
+    description: "A mobile app that connects consumers and sellers in the furniture industry, integrating AR technology and AI recommendation system.",
+    image: "../images/FurniHaven.jpg",
+    tags: ["Flutter", "Firebase"],
+    demoUrl: "https://youtu.be/PvLx2j3GaVg?si=oxGg3s3S38MoiFDe",
+    codeUrl: "https://github.com/sadia-shitol/FurniHaven_SDP-II",
+    detailsUrl: "projects/furnihaven",
     longDescription:
       "This portfolio website showcases professional work and skills with a clean, modern design. Built with Next.js and Tailwind CSS, it features smooth animations, responsive layouts for all devices, and optimized performance. The site includes sections for projects, skills, about information, and contact details.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["Next.js", "Tailwind CSS", "Framer Motion", "TypeScript", "Vercel"],
-    demoUrl: "#",
-    codeUrl: "#",
     features: [
       "Responsive design for all devices",
       "Animated page transitions",
@@ -108,16 +110,15 @@ const projects = [
     ],
   },
   {
-    id: "weatherapp",
-    title: "Weather Forecast App",
+    id:"gym",
+    title: "Multi-Gym Management System",
     description:
-      "A weather application providing real-time forecasts, location-based weather data, and interactive maps.",
-    longDescription:
-      "This weather application delivers accurate, real-time weather forecasts for locations worldwide. It integrates with the OpenWeatherMap API to provide current conditions, hourly forecasts, and 7-day predictions. The app features interactive maps, location-based services, and customizable alerts for severe weather conditions.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["React Native", "Redux", "OpenWeatherMap API", "Geolocation", "Expo"],
+      "A website to manage multiple gyms across a country or city, allowing users to select gyms based on their location and pricing.",
+    image: "../images/Gym.jpg?height=400&width=600",
+    tags: ["HTML", "CSS", "Oracle", "PHP"],
+    detailsUrl: "projects/gym",
     demoUrl: "#",
-    codeUrl: "#",
+    codeUrl: "https://github.com/sadia-shitol/Multi-Gym-Management-System",
     features: [
       "Real-time weather updates",
       "Location-based forecasts",
@@ -142,15 +143,14 @@ const projects = [
     ],
   },
   {
-    id: "blogplatform",
-    title: "Blog Platform",
-    description: "A full-featured blogging platform with markdown support, comments, and user profiles.",
-    longDescription:
-      "This blogging platform provides writers with a powerful yet intuitive interface for creating and sharing content. It supports markdown for easy formatting, has a robust commenting system, and allows users to create detailed profiles. The platform includes features like categories, tags, search functionality, and social sharing options.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["Node.js", "Express", "MongoDB", "React", "Redux", "AWS"],
-    demoUrl: "#",
-    codeUrl: "#",
+    id:"rythmofLife",
+    title: "Through The Rythm of Life!",
+    description: "The journey of a programmer who once dreamed of becoming an artist but chose the path of a software engineer instead. The project explores her daily life as a programmer while reminiscing about the creative life she left behind for the sake of reality.",
+    image: "../images/Blender.jpg?height=400&width=600",
+    tags: ["Blender"],
+    detailsUrl: "projects/rythmofLife",
+    demoUrl: "https://drive.google.com/file/d/1wlNPVvP07GkZYxjPVpezDsw8X3lGjfV1/view?t=1",
+    codeUrl: "https://github.com/sadia-shitol/Through-The-Rythm-of-Life",
     features: [
       "Markdown editor with preview",
       "User authentication and profiles",

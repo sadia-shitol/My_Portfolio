@@ -16,30 +16,6 @@ const projects = [
     demoUrl: "https://thegreensolution.netlify.app/",
     codeUrl: "https://github.com/sadia-shitol/The-Green-Solution",
     detailsUrl: "projects/greenSolution",
-    longDescription:
-    "This e-commerce platform provides a complete solution for online retailers. It features a responsive design, secure payment processing through Stripe, user authentication with JWT, and a comprehensive inventory management system. The admin dashboard allows store owners to track sales, manage products, and handle customer inquiries.",
-    features: [
-      "User authentication and authorization",
-      "Product search and filtering",
-      "Shopping cart and checkout process",
-      "Payment processing with Stripe",
-      "Order tracking and history",
-      "Admin dashboard for inventory management",
-    ],
-    challenges: [
-      "Implementing secure payment processing",
-      "Creating a responsive design for all devices",
-      "Optimizing database queries for performance",
-      "Building a comprehensive admin dashboard",
-      "Ensuring data security and privacy",
-    ],
-    solutions: [
-      "Integrated Stripe API with custom hooks for payment processing",
-      "Used Tailwind CSS with custom breakpoints for responsive design",
-      "Implemented database indexing and query optimization",
-      "Created a modular dashboard with role-based access control",
-      "Applied encryption and secure authentication practices",
-    ],
   },
   {
     id:"ekhonni",
@@ -50,8 +26,7 @@ const projects = [
     tags: ["SpringBoot", "NextJS", "Tailwind CSS","PostGreSQL"],
     demoUrl: "https://drive.google.com/file/d/1jMoBRS2WIZR7uoH9tmdsuD9gJb5eYX-d/view?t=1",
     codeUrl: "https://github.com/sadia-shitol/ekhonni-MIST",
-    detailsUrl: "#",
-  
+    detailsUrl: "projects/ekhonni",
   },
   {
     id:"furnihaven",
@@ -61,7 +36,7 @@ const projects = [
     tags: ["Flutter", "Firebase"],
     demoUrl: "https://youtu.be/PvLx2j3GaVg?si=oxGg3s3S38MoiFDe",
     codeUrl: "https://github.com/sadia-shitol/FurniHaven_SDP-II",
-    detailsUrl: "#",
+    detailsUrl: "projects/furnihaven"
    
   },
   {
@@ -72,10 +47,8 @@ const projects = [
     image: "../images/Gym.jpg?height=400&width=600",
     tags: ["HTML", "CSS", "Oracle", "PHP"],
     demoUrl: "#",
-    codeUrl: "https://github.com/sadia-shitol/Multi-Gym-Management-System",
-    detailsUrl: "#",
-    
-
+     detailsUrl: "projects/gym",
+    codeUrl: "https://github.com/sadia-shitol/Multi-Gym-Management-System"
   },
   {
     id:"rythmofLife",
@@ -85,8 +58,7 @@ const projects = [
     tags: ["Blender"],
     demoUrl: "https://drive.google.com/file/d/1wlNPVvP07GkZYxjPVpezDsw8X3lGjfV1/view?t=1",
     codeUrl: "https://github.com/sadia-shitol/Through-The-Rythm-of-Life",
-    detailsUrl: "#",
-  
+     detailsUrl: "projects/rythmofLife"
   },
 ]
 
