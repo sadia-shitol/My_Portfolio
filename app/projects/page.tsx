@@ -4,7 +4,6 @@ import { ExternalLink, Github, ArrowLeft, Info } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Separator } from "@/components/ui/separator"
-import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
 // This would typically come from a database or CMS
 const projects = [
@@ -22,7 +21,7 @@ const projects = [
       "An e-commerce platform where sellers can post ads of their products and buyers compete in Auctions through online bidding.",
     image: "./images/Ekhonni.jpg",
     tags: ["SpringBoot", "NextJS", "Tailwind CSS","PostGreSQL"],
-    demoUrl: "#",
+    demoUrl: "https://drive.google.com/file/d/1jMoBRS2WIZR7uoH9tmdsuD9gJb5eYX-d/view?t=1",
     codeUrl: "https://github.com/sadia-shitol/ekhonni-MIST",
   
   },
@@ -47,29 +46,18 @@ const projects = [
   },
   {
     title: "Through The Rythm of Life!",
-    description: "The journey of a programmer who once dreamed of becoming an artist but chose the path of a software engineer instead. The project explores her daily life as a programmer, where she navigates the structured world of coding while reminiscing about the creative life she left behind for the sake of reality.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["Node.js", "Express", "MongoDB", "React", "Redux", "AWS"],
-    demoUrl: "./Project Demo Videos/Blender_B1.mp4",
+    description: "The journey of a programmer who once dreamed of becoming an artist but chose the path of a software engineer instead. The project explores her daily life as a programmer while reminiscing about the creative life she left behind for the sake of reality.",
+    image: "./images/Blender.jpg?height=400&width=600",
+    tags: ["Blender"],
+    demoUrl: "https://drive.google.com/file/d/1wlNPVvP07GkZYxjPVpezDsw8X3lGjfV1/view?t=1",
     codeUrl: "https://github.com/sadia-shitol/Through-The-Rythm-of-Life",
   
-  },
-  {
-    title: "Fitness Tracking App",
-    description: "A comprehensive fitness application for tracking workouts, nutrition, and progress over time.",
-    image: "/placeholder.svg?height=400&width=600",
-    tags: ["React Native", "Firebase", "Redux", "Chart.js", "Nutritionix API"],
-    demoUrl: "#",
-    codeUrl: "#",
-    
   },
 ]
 
 export default function ProjectsPage() {
   return (
     <div className="min-hc-screen bg-background">
-
-    <Navbar/>
     <main className="min-h-screen bg-white pt-24 pb-16">
       <div className="container mx-auto px-4 max-w-4xl">
         <div className="flex items-center mb-8">
