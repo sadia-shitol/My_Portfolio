@@ -20,7 +20,7 @@ const projects = [
       "An e-commerce platform where sellers can post ads of their products and buyers compete in Auctions through online bidding.",
     image: "./images/Ekhonni.jpg",
     tags: ["SpringBoot", "NextJS", "Tailwind CSS","PostGreSQL"],
-    demoUrl: "./Project Demo Videos/Ekhonni_Demo.mp4",
+    demoUrl: "#",
     codeUrl: "https://github.com/sadia-shitol/ekhonni-MIST",
   },
   {
