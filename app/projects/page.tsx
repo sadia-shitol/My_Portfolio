@@ -8,49 +8,84 @@ import { Footer } from "@/components/footer"
 // This would typically come from a database or CMS
 const projects = [
   {
+    id: "greenSolution",
     title: "The Green Solution",
     description: " A QnA-based web application for farmers and agronomists, where farmers can ask questions and agronomists can post the answers to those questions.",
-    image: "./images/TheGreenSolution.png",
+    image: "../images/TheGreenSolution.png",
     tags: ["React", "ExpressJS", "MongoDB", "Tensorflow.js"],
     demoUrl: "https://thegreensolution.netlify.app/",
     codeUrl: "https://github.com/sadia-shitol/The-Green-Solution",
+    detailsUrl: "projects/greenSolution",
+    longDescription:
+    "This e-commerce platform provides a complete solution for online retailers. It features a responsive design, secure payment processing through Stripe, user authentication with JWT, and a comprehensive inventory management system. The admin dashboard allows store owners to track sales, manage products, and handle customer inquiries.",
+    features: [
+      "User authentication and authorization",
+      "Product search and filtering",
+      "Shopping cart and checkout process",
+      "Payment processing with Stripe",
+      "Order tracking and history",
+      "Admin dashboard for inventory management",
+    ],
+    challenges: [
+      "Implementing secure payment processing",
+      "Creating a responsive design for all devices",
+      "Optimizing database queries for performance",
+      "Building a comprehensive admin dashboard",
+      "Ensuring data security and privacy",
+    ],
+    solutions: [
+      "Integrated Stripe API with custom hooks for payment processing",
+      "Used Tailwind CSS with custom breakpoints for responsive design",
+      "Implemented database indexing and query optimization",
+      "Created a modular dashboard with role-based access control",
+      "Applied encryption and secure authentication practices",
+    ],
   },
   {
+    id:"ekhonni",
     title: "Ekhonni",
     description:
       "An e-commerce platform where sellers can post ads of their products and buyers compete in Auctions through online bidding.",
-    image: "./images/Ekhonni.jpg",
+    image: "../images/Ekhonni.jpg",
     tags: ["SpringBoot", "NextJS", "Tailwind CSS","PostGreSQL"],
     demoUrl: "https://drive.google.com/file/d/1jMoBRS2WIZR7uoH9tmdsuD9gJb5eYX-d/view?t=1",
     codeUrl: "https://github.com/sadia-shitol/ekhonni-MIST",
+    detailsUrl: "#",
   
   },
   {
+    id:"furnihaven",
     title: "FurniHaven",
     description: "A mobile app that connects consumers and sellers in the furniture industry, integrating AR technology and AI recommendation system.",
-    image: "./images/FurniHaven.jpg",
+    image: "../images/FurniHaven.jpg",
     tags: ["Flutter", "Firebase"],
     demoUrl: "https://youtu.be/PvLx2j3GaVg?si=oxGg3s3S38MoiFDe",
     codeUrl: "https://github.com/sadia-shitol/FurniHaven_SDP-II",
+    detailsUrl: "#",
    
   },
   {
+    id:"gym",
     title: "Multi-Gym Management System",
     description:
       "A website to manage multiple gyms across a country or city, allowing users to select gyms based on their location and pricing.",
-    image: "./images/Gym.jpg?height=400&width=600",
+    image: "../images/Gym.jpg?height=400&width=600",
     tags: ["HTML", "CSS", "Oracle", "PHP"],
     demoUrl: "#",
-    codeUrl: "https://github.com/sadia-shitol/Multi-Gym-Management-System"
+    codeUrl: "https://github.com/sadia-shitol/Multi-Gym-Management-System",
+    detailsUrl: "#",
+    
 
   },
   {
+    id:"rythmofLife",
     title: "Through The Rythm of Life!",
     description: "The journey of a programmer who once dreamed of becoming an artist but chose the path of a software engineer instead. The project explores her daily life as a programmer while reminiscing about the creative life she left behind for the sake of reality.",
-    image: "./images/Blender.jpg?height=400&width=600",
+    image: "../images/Blender.jpg?height=400&width=600",
     tags: ["Blender"],
     demoUrl: "https://drive.google.com/file/d/1wlNPVvP07GkZYxjPVpezDsw8X3lGjfV1/view?t=1",
     codeUrl: "https://github.com/sadia-shitol/Through-The-Rythm-of-Life",
+    detailsUrl: "#",
   
   },
 ]
@@ -123,10 +158,15 @@ export default function ProjectsPage() {
                       className="gap-2 bg-forest-100 hover:bg-forest-200 text-forest-900"
                       asChild
                     >
-                      <Link href={`/projects/`}>
+                      {/* <Link href={`/projects/`}>
                         <Info size={16} />
                         Details
-                      </Link>
+                      </Link> */}
+                      <a href={project.detailsUrl} target="_blank" rel="noopener noreferrer">
+                        <Info size={16} />
+                        Details
+                      </a>
+                      
                     </Button>
                   </div>
                 </div>

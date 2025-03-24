@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge"
 
 const projects = [
   {
+    
     title: "The Green Solution",
     description: " A QnA-based web application for farmers and agronomists, where farmers can ask questions and agronomists can post the answers to those questions.",
     image: "./images/TheGreenSolution.png",
