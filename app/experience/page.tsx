@@ -23,10 +23,9 @@ export default function ExperiencePage() {
           </div>
 
           <Button className="gap-2 bg-forest-900 hover:bg-forest-800 text-white" asChild>
-            <a href="/files/resume.pdf" download>
-              <Download size={16} />
-              Download CV
-            </a>
+            <a href="https://drive.google.com/file/d/1E0XCgH2wUtZrAFCJ3cTXcF_0M1eNUUNC/view" download="Sadia_Bintay_Mostafiz_CV.pdf"  className=" flex items-center gap-2">
+            Download CV
+               </a>
           </Button>
         </div>
 
@@ -112,7 +111,7 @@ export default function ExperiencePage() {
           <p className="text-forest-900/80 mb-6">
             Interested in my qualifications? Check out my achievements and certifications.
           </p>
-          <Link href="/achievements">
+          <Link href="/Achievements">
             <Button size="lg" className="bg-forest-900 hover:bg-forest-800 text-white">
               View Achievements
             </Button>

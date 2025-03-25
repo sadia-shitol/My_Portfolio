@@ -97,7 +97,7 @@ export function Experience() {
             className="border-forest-200 text-forest-900 hover:bg-forest-900/10"
             asChild
           >
-            <Link href="/experience">View Full Resume</Link>
+            <Link href="/experience">View Details</Link>
           </Button>
         </div>
       </div>
