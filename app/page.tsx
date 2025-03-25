@@ -5,7 +5,6 @@ import { Skills } from "@/components/skills"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import { Navbar } from "@/components/navbar"
-import AnimatedBackground from "@/components/animated-background"
 import { Experience } from "@/components/experience"
 import { Achievements } from "@/components/achievements"
 import './globals.css'
@@ -21,8 +20,6 @@ export default function Home() {
         <Skills />
         <Achievements/>
         <Contact />
-        <AnimatedBackground/>
-        
       </main>
       <Footer />
     </div>

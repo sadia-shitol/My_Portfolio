@@ -1,8 +1,9 @@
+//Commented Part will be implemented someday inn SHAA ALLAH
 // "use client"
 
 // import { useState } from "react"
 // import Link from "next/link"
-// import { ArrowLeft, Award, Calendar, GraduationCap, FileText, ImageIcon } from "lucide-react"
+// import { ArrowLeft, Award, Calendar, GraduationCap, FileText, ImageIcon, ExternalLink, Image } from "lucide-react"
 // import { Button } from "@/components/ui/button"
 // import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 // import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
@@ -14,9 +15,10 @@
 //   const certifications = getAchievementsByCategory("certification")
 //   const awards = getAchievementsByCategory("award")
 //   const education = getAchievementsByCategory("education")
-//   const publications = getAchievementsByCategory("publication")
+//   //FUTURE IMPLEMENTATION INN SHAA ALLAH
+//   // const publications = getAchievementsByCategory("publication")
 
-//   const [selectedCertificate, setSelectedCertificate] = useState<{
+//   const [selectedImage, setSelectedImage] = useState<{
 //     title: string
 //     imageSrc: string
 //   } | null>(null)
@@ -30,19 +32,20 @@
 //         return <FileText className="h-5 w-5 text-forest-700" />
 //       case "education":
 //         return <GraduationCap className="h-5 w-5 text-forest-700" />
-//       case "publication":
-//         return <FileText className="h-5 w-5 text-forest-700" />
+//         //Future Implementation INN SHAA ALLAH
+//       // case "publication":
+//       //   return <FileText className="h-5 w-5 text-forest-700" />
 //       default:
 //         return <Award className="h-5 w-5 text-forest-700" />
 //     }
 //   }
 
-//   const openCertificate = (title: string, imageSrc: string) => {
-//     setSelectedCertificate({ title, imageSrc })
+//   const openImage = (title: string, imageSrc: string) => {
+//     setSelectedImage({ title, imageSrc })
 //   }
 
-//   const closeCertificate = () => {
-//     setSelectedCertificate(null)
+//   const closeImage = () => {
+//     setSelectedImage(null)
 //   }
 
 //   const renderAchievementCard = (achievement: any) => (
@@ -63,19 +66,46 @@
 //       <CardContent>
 //         <p className="text-forest-900/80">{achievement.description}</p>
 
-//         {achievement.certificateImage && (
-//           <div className="mt-4">
+//         <div className="flex flex-wrap gap-2 mt-4">
+//           {achievement.certificateImage && achievement.category === "certification" && (
 //             <Button
 //               variant="outline"
 //               size="sm"
 //               className="gap-2 border-forest-200 text-forest-900 hover:bg-forest-900/10"
-//               onClick={() => openCertificate(achievement.title, achievement.certificateImage!)}
+//               onClick={() => openImage(achievement.title, achievement.certificateImage!)}
 //             >
 //               <ImageIcon size={14} />
 //               View Certificate
 //             </Button>
-//           </div>
-//         )}
+//           )}
+
+//           {achievement.pictureImage && achievement.category === "award" && (
+//             <Button
+//               variant="outline"
+//               size="sm"
+//               className="gap-2 border-forest-200 text-forest-900 hover:bg-forest-900/10"
+//               onClick={() => openImage(achievement.title, achievement.pictureImage!)}
+//             >
+//               <Image size={14} />
+//               View Pictures
+//             </Button>
+//           )}
+//           {/* FUTURE IMPLEMENTATION INN SHAA ALLAH */}
+
+//           {/* {achievement.url && achievement.category === "publication" && (
+//             <Button
+//               variant="outline"
+//               size="sm"
+//               className="gap-2 border-forest-200 text-forest-900 hover:bg-forest-900/10"
+//               asChild
+//             >
+//               <a href={achievement.url} target="_blank" rel="noopener noreferrer">
+//                 <ExternalLink size={14} />
+//                 View Details
+//               </a>
+//             </Button>
+//           )} */}
+//         </div>
 //       </CardContent>
 //     </Card>
 //   )
@@ -102,7 +132,8 @@
 //             <TabsTrigger value="certifications">Certifications</TabsTrigger>
 //             <TabsTrigger value="awards">Awards</TabsTrigger>
 //             <TabsTrigger value="education">Education</TabsTrigger>
-//             <TabsTrigger value="publications">Publications</TabsTrigger>
+//             {/* FUTUTRE IMPLEMENTATION INN SHAA ALLAH */}
+//             {/* <TabsTrigger value="publications">Publications</TabsTrigger> */}
 //           </TabsList>
 
 //           <TabsContent value="all" className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -120,10 +151,10 @@
 //           <TabsContent value="education" className="grid grid-cols-1 md:grid-cols-2 gap-6">
 //             {education.map(renderAchievementCard)}
 //           </TabsContent>
-
-//           <TabsContent value="publications" className="grid grid-cols-1 md:grid-cols-2 gap-6">
+//           {/* FUTUTRE IMPLEMENTATION INN SHAA ALLAH */}
+//           {/* <TabsContent value="publications" className="grid grid-cols-1 md:grid-cols-2 gap-6">
 //             {publications.map(renderAchievementCard)}
-//           </TabsContent>
+//           </TabsContent> */}
 //         </Tabs>
 
 //         <div className="mt-16 text-center">
@@ -136,17 +167,18 @@
 //         </div>
 //       </div>
 
-//       {selectedCertificate && (
+//       {selectedImage && (
 //         <CertificateModal
-//           title={selectedCertificate.title}
-//           imageSrc={selectedCertificate.imageSrc}
-//           isOpen={!!selectedCertificate}
-//           onClose={closeCertificate}
+//           title={selectedImage.title}
+//           imageSrc={selectedImage.imageSrc}
+//           isOpen={!!selectedImage}
+//           onClose={closeImage}
 //         />
 //       )}
 //     </main>
 //   )
 // }
+
 
 "use client"
 
@@ -164,7 +196,6 @@ export default function AchievementsPage() {
   const certifications = getAchievementsByCategory("certification")
   const awards = getAchievementsByCategory("award")
   const education = getAchievementsByCategory("education")
-  const publications = getAchievementsByCategory("publication")
 
   const [selectedImage, setSelectedImage] = useState<{
     title: string
@@ -180,8 +211,6 @@ export default function AchievementsPage() {
         return <FileText className="h-5 w-5 text-forest-700" />
       case "education":
         return <GraduationCap className="h-5 w-5 text-forest-700" />
-      case "publication":
-        return <FileText className="h-5 w-5 text-forest-700" />
       default:
         return <Award className="h-5 w-5 text-forest-700" />
     }
@@ -218,7 +247,7 @@ export default function AchievementsPage() {
             <Button
               variant="outline"
               size="sm"
-              className="gap-2 border-forest-200 text-forest-900 hover:bg-forest-900/10"
+              className="gap-2 border-forest-900 text-forest-900 hover:bg-forest-900/10"
               onClick={() => openImage(achievement.title, achievement.certificateImage!)}
             >
               <ImageIcon size={14} />
@@ -234,11 +263,11 @@ export default function AchievementsPage() {
               onClick={() => openImage(achievement.title, achievement.pictureImage!)}
             >
               <Image size={14} />
-              View Pictures
+              Picture
             </Button>
           )}
-
-          {achievement.url && achievement.category === "publication" && (
+            {/* Future implementation inn Shaa Allah */}
+          {/* {achievement.url && achievement.category === "publication" && (
             <Button
               variant="outline"
               size="sm"
@@ -250,7 +279,7 @@ export default function AchievementsPage() {
                 View Details
               </a>
             </Button>
-          )}
+          )} */}
         </div>
       </CardContent>
     </Card>
@@ -269,16 +298,15 @@ export default function AchievementsPage() {
         </div>
 
         <p className="text-forest-900/80 max-w-3xl mb-12">
-          A collection of my professional achievements, certifications, educational background, and publications.
+          A collection of my professional achievements, certifications, educational background, and awards.
         </p>
 
         <Tabs defaultValue="all" className="mb-12">
-          <TabsList className="grid grid-cols-5 mb-8">
+          <TabsList className="grid grid-cols-4 mb-8">
             <TabsTrigger value="all">All</TabsTrigger>
             <TabsTrigger value="certifications">Certifications</TabsTrigger>
             <TabsTrigger value="awards">Awards</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
-            <TabsTrigger value="publications">Publications</TabsTrigger>
           </TabsList>
 
           <TabsContent value="all" className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -295,10 +323,6 @@ export default function AchievementsPage() {
 
           <TabsContent value="education" className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {education.map(renderAchievementCard)}
-          </TabsContent>
-
-          <TabsContent value="publications" className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {publications.map(renderAchievementCard)}
           </TabsContent>
         </Tabs>
 
@@ -323,4 +347,5 @@ export default function AchievementsPage() {
     </main>
   )
 }
+
 

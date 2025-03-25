@@ -54,6 +54,13 @@ export function About() {
               </a>
               </Button>
 
+              <Button className="gap-2 bg-forest-900 hover:bg-forest-800 text-white" >
+                <a href="/AboutMe" className="flex items-center gap-2">
+                  Details
+                </a>
+              </Button>
+             
+
               <div className="flex gap-2">
                 {[
                   { icon: <Github size={20} />, label: "GitHub" ,url:"https://github.com/sadia-shitol"},
@@ -73,14 +80,18 @@ export function About() {
                     </a>
                     
                   </Button>
+                  
+                  
                 ))}
               </div>
             </div>
           </div>
         </div>
       </div>
+      
       </div> 
     </section>
+    
   )
 }
 

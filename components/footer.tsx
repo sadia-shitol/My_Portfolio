@@ -1,13 +1,13 @@
 import Link from "next/link"
 import { Github, Linkedin, Mail, Instagram } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import AnimatedBackground from "./animated-background"
+
 export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-white text-forest-900 py-12 border-t border-gray-100">
-      <AnimatedBackground/>
+    <footer className="bg-forest-300 text-forest-900 py-12 border-t border-gray-100">
+    
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
           <div className="mb-6 md:mb-0">
@@ -29,7 +29,7 @@ export function Footer() {
                 size="icon"
                 variant="outline"
                 aria-label={social.label}
-                className="border-forest-200 text-forest-900 hover:bg-forest-900/10"
+                className="border-forest-100 text-forest-900 hover:bg-forest-900/10"
               >
                  <a href={social.url} target="_blank" rel="noopener noreferrer">
                       {social.icon}

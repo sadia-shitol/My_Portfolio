@@ -25,7 +25,7 @@ export default function AnimatedBackground() {
           return (
             <li
               key={index}
-              className="absolute bg-green-400 opacity-50 animate-floating"
+              className="absolute bg-forest-600/25 opacity-50 animate-floating"
               style={{
                 width: `${size}px`,
                 height: `${size}px`,
