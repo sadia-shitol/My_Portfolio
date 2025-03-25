@@ -5,17 +5,17 @@ const skillCategories = [
   {
     title: "Frontend Development",
     icon: <Layout className="h-10 w-10 text-forest-700" />,
-    skills: ["HTML/CSS", "JavaScript", "TypeScript", "React", "Next.js", "Vue.js", "Tailwind CSS", "Framer Motion"],
+    skills: ["HTML/CSS", "JavaScript", "TypeScript", "React", "Next.js", "Tailwind CSS", "Framer Motion"],
   },
   {
     title: "Backend Development",
     icon: <Server className="h-10 w-10 text-forest-700" />,
-    skills: ["Node.js", "Express", "Python", "Django", "PHP", "Laravel", "GraphQL", "REST API"],
+    skills: ["Node.js", "Express", "PHP"],
   },
   {
     title: "Database",
     icon: <Database className="h-10 w-10 text-forest-700" />,
-    skills: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Redis", "Prisma", "Mongoose", "SQL"],
+    skills: ["MongoDB", "PostgreSQL", "MySQL", "Firebase", "Mongoose"],
   },
   {
     title: "UI/UX Design",
@@ -32,22 +32,16 @@ const skillCategories = [
     ],
   },
   {
-    title: "DevOps",
-    icon: <Code className="h-10 w-10 text-forest-700" />,
-    skills: ["Git", "GitHub", "Docker", "CI/CD", "AWS", "Vercel", "Netlify", "Linux"],
-  },
-  {
     title: "Other Skills",
     icon: <Globe className="h-10 w-10 text-forest-700" />,
     skills: [
       "SEO",
-      "Performance Optimization",
-      "Testing",
+      "Git",
+      "GitHub",
       "Agile Methodology",
       "Technical Writing",
-      "Problem Solving",
       "Team Collaboration",
-      "Project Management",
+      "Project Management"
     ],
   },
 ]

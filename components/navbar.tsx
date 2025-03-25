@@ -5,6 +5,8 @@ import Link from "next/link"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { cn } from "@/lib/utils"
+import { Download, Mail, Github, Linkedin, Instagram } from "lucide-react"
+
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
@@ -45,7 +47,7 @@ export function Navbar() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6">
-          {["about", "projects", "skills", "contact"].map((item) => (
+          {["about", "projects", "skills", "contact",].map((item) => (
             <button
               key={item}
               onClick={() => scrollToSection(item)}
@@ -54,7 +56,10 @@ export function Navbar() {
               {item}
             </button>
           ))}
-          <Button className="bg-forest-900 hover:bg-forest-800 text-white">Resume</Button>
+           <a href="https://drive.google.com/file/d/1E0XCgH2wUtZrAFCJ3cTXcF_0M1eNUUNC/view" download="Sadia_Bintay_Mostafiz_CV.pdf"  className=" flex items-center gap-2">
+            <Button className="w-full bg-forest-900 hover:bg-forest-800 text-white">
+            Resume</Button>
+            </a>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -81,7 +86,12 @@ export function Navbar() {
                 {item}
               </button>
             ))}
-            <Button className="w-full bg-forest-900 hover:bg-forest-800 text-white">Resume</Button>
+          
+            <a href="https://drive.google.com/file/d/1E0XCgH2wUtZrAFCJ3cTXcF_0M1eNUUNC/view" className=" flex items-center gap-2">
+            <Button className="w-full bg-forest-900 hover:bg-forest-800 text-white">
+            Resume</Button>
+            </a>
+            
           </div>
         </div>
       )}

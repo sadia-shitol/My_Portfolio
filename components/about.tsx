@@ -5,15 +5,16 @@ import { Download, Mail, Github, Linkedin, Instagram } from "lucide-react"
 
 export function About() {
   return (
-    <section id="about" className="px-0 ml-0 py-20 bg-white flex justify-center">
-      <div className="container mx-auto px-0 left-0">
+    <section id="about" className="py-20 bg-white flex justify-center">
+      <div className="ml-[-230px]">
+      <div className="container mx-auto">
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-forest-900">
           About <span className="text-forest-700">Me</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center ml-0 left-0">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center ml-[-170px]">
           <div className="flex justify-center md:justify-end ml-0">
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4  border-forest-200 transform translate-x-2 ml-0">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4  border-forest-200 transform translate-x-2">
 
               <Image  src="/images/portfolio.jpg"  alt="Sadia Bintay Mostafiz"
                 fill
@@ -23,7 +24,8 @@ export function About() {
           </div>
 
           <div>
-            <h3 className="text-2xl font-semibold mb-4 text-forest-900">I'm Sadia Bintay Mostafiz</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-forest-900">Sadia Bintay Mostafiz</h3>
+            <h4 className="">A Computer Science and EngineeringUndergraduate Student at Military Institute of Science and tecchnology </h4>
             <p className="text-forest-900/80 mb-6">
               Aspiring Web Developer with strong academic foundation and practical project experience, adept in
               transforming creative concepts into visually attractive interfaces. Interested in contributing innovative
@@ -77,6 +79,7 @@ export function About() {
           </div>
         </div>
       </div>
+      </div> 
     </section>
   )
 }

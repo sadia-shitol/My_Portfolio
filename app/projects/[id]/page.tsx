@@ -111,66 +111,49 @@ const projects = [
   {
     id:"gym",
     title: "Multi-Gym Management System",
-    description:
-      "A website to manage multiple gyms across a country or city, allowing users to select gyms based on their location and pricing.",
+    longDescription:
+      "With the expansion of the fitness industry and the growing interest of the general public to become more healthy, gyms have become a flourishing business with a massive increase of client base. Clients who seek to join a gym, must go through a tedious process of searching for gyms which meets their preferences. The goal of this project is to implement a well-structured database management system, and web-based application that will aid in the daily operations of gyms. Many gyms have a large client base but do not have the required managerial tools to manage the data of the members. The aim of this project is to implement a database management system to ensure that users are able to select their preferred gym, and that every gym can keep track of their clients, trainers, nutritionists, equipments and packages.",
     image: "../images/Gym.jpg?height=400&width=600",
     tags: ["HTML", "CSS", "Oracle", "PHP"],
     detailsUrl: "projects/gym",
     demoUrl: "#",
     codeUrl: "https://github.com/sadia-shitol/Multi-Gym-Management-System",
     features: [
-      "Real-time weather updates",
-      "Location-based forecasts",
-      "Interactive weather maps",
-      "7-day and hourly predictions",
-      "Weather alerts and notifications",
-      "Offline mode with cached data",
+      "Login: Users (Owner, Trainer, Nutritionist, Client) are able to login and access features available to them",
+      "Views: Clients, Trainers, Nutritionists and Owners will see views assigned to them where they will be able to see and edit their basic information.",
+      "Assignment: Connection between trainers and nutritionists will be given by their owners when they are assigned to clients"
     ],
     challenges: [
-      "Integrating multiple weather data sources",
-      "Implementing accurate geolocation services",
-      "Creating interactive and responsive maps",
-      "Building an offline-first experience",
-      "Optimizing battery usage with background updates",
+      "Billing System: Billing system for clients is not developed.",
+      "Package Finish Confirmation: No system developed to alert clients when their package duration ends.",
+      "Manual Trainer and Nutritionist Assignment: Trainers and nutritionists must be manually assigned by owners",
+      "Rudimentary User Interface: The webpage designed with php, html and css is basic and needs to be developed further."
     ],
     solutions: [
-      "Created a unified API service for multiple weather sources",
-      "Used native geolocation with permission handling",
-      "Implemented interactive maps with custom weather overlays",
-      "Applied caching strategies for offline data access",
-      "Optimized background processes for minimal battery impact",
+      "Automated Billing System",
+      "AI based Search",
+      "Automatic Trainer and Nutritionist Assignment",
+      "Messaging System",
     ],
   },
   {
     id:"rythmofLife",
     title: "Through The Rythm of Life!",
-    description: "The journey of a programmer who once dreamed of becoming an artist but chose the path of a software engineer instead. The project explores her daily life as a programmer while reminiscing about the creative life she left behind for the sake of reality.",
+    longDescription: "This project depicts the journey of a programmer who once dreamed of becoming an artist but chose the path of a software engineer instead. Growing up, she aspired to express herself through art, yet reality led her to a career in technology. The project explores her daily life as a programmer, where she navigates the structured world of coding while reminiscing about the creative life she left behind for the sake of reality. Yet, she continues moving forward through the rhythm of life..",
     image: "../images/Blender.jpg?height=400&width=600",
-    tags: ["Blender"],
+    tags: ["Blender","3D Graphics"],
     detailsUrl: "projects/rythmofLife",
     demoUrl: "https://drive.google.com/file/d/1wlNPVvP07GkZYxjPVpezDsw8X3lGjfV1/view?t=1",
     codeUrl: "https://github.com/sadia-shitol/Through-The-Rythm-of-Life",
     features: [
-      "Markdown editor with preview",
-      "User authentication and profiles",
-      "Commenting system with moderation",
-      "Categories and tags for organization",
-      "Search functionality",
-      "Social media integration",
+      "Basically a demonstration of 3D graphics and animation through object Modeling, Rigging and Rendering ",
+      
     ],
     challenges: [
-      "Building a rich text editor with markdown support",
-      "Creating a scalable comment system with moderation",
-      "Implementing efficient search functionality",
-      "Designing a responsive and accessible interface",
-      "Optimizing performance for content-heavy pages",
+      "There were no limitations regrarding the project"
     ],
     solutions: [
-      "Developed a custom markdown editor with real-time preview",
-      "Created a threaded comment system with moderation tools",
-      "Implemented text indexing for efficient search",
-      "Applied responsive design principles with accessibility in mind",
-      "Used server-side rendering and caching for performance",
+      "Can gain more knowledge about 3D computer Graphics and animation"
     ],
   },
 ]
