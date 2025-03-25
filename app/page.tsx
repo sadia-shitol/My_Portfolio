@@ -6,6 +6,8 @@ import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import { Navbar } from "@/components/navbar"
 import AnimatedBackground from "@/components/animated-background"
+import { Experience } from "@/components/experience"
+import { Achievements } from "@/components/achievements"
 import './globals.css'
 export default function Home() {
   return (
@@ -14,8 +16,10 @@ export default function Home() {
       <main>
         <Hero />
         <About/>
+        <Experience />
         <Projects />
         <Skills />
+        <Achievements/>
         <Contact />
         <AnimatedBackground/>
         

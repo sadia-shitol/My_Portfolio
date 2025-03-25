@@ -25,7 +25,7 @@ export function About() {
 
           <div>
             <h3 className="text-2xl font-semibold mb-4 text-forest-900">Sadia Bintay Mostafiz</h3>
-            <h4 className="">A Computer Science and EngineeringUndergraduate Student at Military Institute of Science and tecchnology </h4>
+            <h4 className="">A Computer Science and Engineering Undergraduate Student at Military Institute of Science and Technology </h4>
             <p className="text-forest-900/80 mb-6">
               Aspiring Web Developer with strong academic foundation and practical project experience, adept in
               transforming creative concepts into visually attractive interfaces. Interested in contributing innovative

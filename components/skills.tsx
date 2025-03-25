@@ -10,7 +10,7 @@ const skillCategories = [
   {
     title: "Backend Development",
     icon: <Server className="h-10 w-10 text-forest-700" />,
-    skills: ["Node.js", "Express", "PHP"],
+    skills: ["Node.js", "ExpressJS", "PHP"],
   },
   {
     title: "Database",

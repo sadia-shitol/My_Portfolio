@@ -81,7 +81,7 @@ export default function ProjectsPage() {
           different skills and technologies I've worked with.
         </p>
 
-        <div className="space-y-12">
+        
           {projects.map((project, index) => (
             <div>
               {index > 0 && <Separator className="mb-12" />}
@@ -145,7 +145,7 @@ export default function ProjectsPage() {
               </div>
             </div>
           ))}
-        </div>
+      
 
         <div className="mt-16 text-center">
           <p className="text-forest-900/80 mb-6">
