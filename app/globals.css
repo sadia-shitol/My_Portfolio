@@ -102,7 +102,7 @@ body {
 } */
 
 /* //for the floating dhongdhang bg */
-@keyframes floating {
+/* @keyframes floating {
   0% {
     transform: translateY(0) rotate(0deg);
     opacity: 1;
@@ -117,4 +117,4 @@ body {
 
 .animate-floating {
   animation: floating linear infinite;
-}
+} */

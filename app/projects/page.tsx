@@ -83,7 +83,7 @@ export default function ProjectsPage() {
 
         
           {projects.map((project, index) => (
-            <div>
+            <div key={project.id}>
               {index > 0 && <Separator className="mb-12" />}
               <div className="flex flex-col md:flex-row gap-8">
                 <div className="md:w-full">

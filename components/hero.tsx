@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 
 export function Hero() {
   const [typedText, setTypedText] = useState("")
-  const fullText = "Developer. Designer. Creator."
+  const fullText = "Undergraduate Student at Military Institute of Science and Technology."
   const [isClicked, setIsClicked] = useState(false)
 
   useEffect(() => {
@@ -23,8 +23,14 @@ export function Hero() {
     return () => clearInterval(typingInterval)
   }, [])
 
-  const scrollToAbout = () => {
-    const aboutSection = document.getElementById("about")
+  const scrollToProjects = () => {
+    const aboutSection = document.getElementById("projects")
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
+  const scrollToContact = () => {
+    const aboutSection = document.getElementById("contact")
     if (aboutSection) {
       aboutSection.scrollIntoView({ behavior: "smooth" })
     }
@@ -33,7 +39,7 @@ export function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center bg-white text-forest-500">
       <div className="container mx-auto px-4 text-center">
-        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-forest-500">
+        <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 text-forest-700">
           Hello, I'm <span className="text-forest-900">Sadia Bintay Mostafiz</span>
         </h1>
         <h2 className="text-xl md:text-2xl lg:text-3xl text-forest-900 mb-8 h-8">
@@ -41,10 +47,10 @@ export function Hero() {
           <span className="animate-pulse">|</span>
         </h2>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button size="lg" onClick={scrollToAbout} className="bg-forest-900 hover:bg-forest-800 text-white">
+          <Button size="lg" onClick={scrollToProjects} className="bg-forest-900 shadow-md hover:bg-forest-100 text-white hover:text-forest-900 transform transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg  hover:border-forest-700">
             View My Work
           </Button>
-          <Button size="lg" variant="outline" className="border-forest-900 text-forest-900 hover:bg-forest-900/10">
+          <Button size="lg" onClick={scrollToContact} variant="outline" className="border-forest-900 shadow-lg text-forest-900 hover:bg-forest-900 hover:text-forest-100 transform transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg  hover:border-forest-700">
             Contact Me
           </Button>
         </div>
@@ -59,7 +65,7 @@ export function Hero() {
           <Button
             variant="ghost"
             size="icon"
-            onClick={scrollToAbout}
+            onClick={scrollToProjects}
             aria-label="Scroll down"
             //className="text-forest-900 hover:text-forest-700 w-14 h-14 rounded-full"
             className={`w-14 h-14 rounded-full ${isClicked ? "text-white" : "text-forest-900"}`}
