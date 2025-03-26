@@ -34,8 +34,8 @@ export function Navbar() {
   return (
     <header
       className={cn(
-        "fixed top-0 w-full z-50 transition-all duration-300",
-        scrolled ? "bg-border-forest-100/90 backdrop-blur-md shadow-sm" : "bg-transparent",
+        "fixed top-0 w-full z-50 transition-all duration-300 bg-forest-100",
+        scrolled ? "bg-border-forest-100/90 bg-forest-50/50 backdrop-blur-md shadow-sm" : "bg-transparent",
       )}
     >
       <div className="container mx-auto px-4 py-4 flex justify-between items-center">
@@ -49,14 +49,14 @@ export function Navbar() {
             <button
               key={item}
               onClick={() => scrollToSection(item)}
-              className="text-forest-900/80 hover:text-forest-900 capitalize transition-colors"
+              className="text-forest-900 capitalize transform transition-all duration-300 hover:scale-105"
             >
               {item}
             </button>
           ))}
 
           <a href="https://drive.google.com/file/d/1E0XCgH2wUtZrAFCJ3cTXcF_0M1eNUUNC/view" download="Sadia_Bintay_Mostafiz_CV.pdf"  className=" flex items-center gap-2">
-           <Button className="w-full bg-forest-900 hover:bg-forest-800 text-white">
+           <Button className="w-full bg-forest-900 shadow-md hover:bg-white text-white transform transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg  hover:text-forest-900">
             Resume</Button>
                </a>
         </nav>

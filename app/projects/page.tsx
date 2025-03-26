@@ -111,7 +111,7 @@ export default function ProjectsPage() {
                   <div className="flex flex-wrap gap-3">
                     <Button
                       variant="outline"
-                      className="gap-2 border-forest-200 text-forest-900 hover:bg-forest-900/10"
+                      className="gap-2  border-forest-200 text-forest-900 hover:bg-forest-900 hover:text-white"
                       asChild
                     >
                       <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
@@ -119,7 +119,7 @@ export default function ProjectsPage() {
                         Code
                       </a>
                     </Button>
-                    <Button className="gap-2 bg-forest-900 hover:bg-forest-800 text-white" asChild>
+                    <Button className="gap-2 border-[0.02px] bg-forest-900 hover:bg-white hover:border-forest-950 hover:text-black text-white" asChild>
                       <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink size={16} />
                         Demo
@@ -127,7 +127,7 @@ export default function ProjectsPage() {
                     </Button>
                     <Button
                       variant="secondary"
-                      className="gap-2 bg-forest-100 hover:bg-forest-200 text-forest-900"
+                      className="gap-2 text-black border-[0.001px] border-black bg-forest-100  hover:bg-forest-900 hover:text-white"
                       asChild
                     >
                       {/* <Link href={`/projects/`}>
@@ -152,7 +152,7 @@ export default function ProjectsPage() {
             Interested in working together? It's always a pleasure to discuss about new projects and opportunities.
           </p>
           <Link href="/#contact">
-            <Button size="lg" className="bg-forest-900 hover:bg-forest-800 text-white">
+            <Button size="lg" className="boder-[0.02px] border-forest-100 hover:text-forest-950 bg-forest-950 text-white hover:bg-white shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-lg border hover:border-forest-900">
               Get In Touch
             </Button>
           </Link>

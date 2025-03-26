@@ -17,13 +17,13 @@ export function Experience() {
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-forest-900">
           Work <span className="text-forest-700">Experience</span>
         </h2>
-        <p className="text-forest-900/80 text-center max-w-2xl mx-auto mb-12">
+        <p className="text-forest-900/90 text-center max-w-2xl mx-auto mb-12">
           My professional journey includes working with diverse teams and technologies to deliver impactful solutions.
         </p>
 
         <div className="space-y-6 max-w-4xl mx-auto">
           {experiences.map((experience) => (
-            <Card key={experience.id} className="border border-gray-100">
+            <Card key={experience.id} className="border-[0.02px] border-forest-900">
               <CardHeader className="flex flex-col md:flex-row gap-4 md:items-center">
                 {experience.logo && (
                   <div className="w-16 h-16 relative flex-shrink-0">
@@ -37,16 +37,16 @@ export function Experience() {
                 )}
                 <div className="space-y-1">
                   <CardTitle className="text-forest-900">{experience.title}</CardTitle>
-                  <CardDescription className="text-forest-900/70">
+                  <CardDescription className="text-forest-900/90">
                     <span className="font-medium">{experience.company}</span>
                     <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1">
-                      <div className="flex items-center text-sm text-forest-900/60">
-                        <Calendar className="mr-1 h-3 w-3" />
+                      <div className="flex items-center text-sm text-forest-900/80">
+                        <Calendar className="mr-1 h-3 w-3 text-forest-950" />
                         {experience.startDate} - {experience.endDate || "Present"}
                       </div>
                       {experience.location && (
-                        <div className="flex items-center text-sm text-forest-900/60">
-                          <MapPin className="mr-1 h-3 w-3" />
+                        <div className="flex items-center text-sm text-forest-950">
+                          <MapPin className="mr-1 h-3 w-3 text-forest-900/80" />
                           {experience.location}
                         </div>
                       )}
@@ -59,13 +59,13 @@ export function Experience() {
 
                 <div className="space-y-3">
                   <h4 className="text-sm font-medium text-forest-900">Key Responsibilities:</h4>
-                  <ul className="list-disc pl-5 space-y-1 text-forest-900/80">
+                  <ul className="list-disc pl-5 space-y-1 text-forest-900/90">
                     {experience.responsibilities.slice(0, 3).map((responsibility, index) => (
                       <li key={index}>{responsibility}</li>
                     ))}
                     {experience.responsibilities.length > 3 && (
                       <li>
-                        <Link href={`/experience#${experience.id}`} className="text-forest-700 hover:underline">
+                        <Link href={`/experience#${experience.id}`} className="text-forest-900 hover:underline">
                           View more...
                         </Link>
                       </li>
@@ -75,7 +75,7 @@ export function Experience() {
 
                 <div className="flex flex-wrap gap-2 mt-4">
                   {experience.technologies.slice(0, 5).map((tech) => (
-                    <Badge key={tech} variant="outline" className="text-forest-900 border-forest-200">
+                    <Badge key={tech} variant="outline" className="text-forest-900 border-forest-900/40">
                       {tech}
                     </Badge>
                   ))}
@@ -94,7 +94,7 @@ export function Experience() {
           <Button
             variant="outline"
             size="lg"
-            className="border-forest-200 text-forest-900 hover:bg-forest-900/10"
+            className="bg-forest-900 text-white hover:bg-white shadow-md transform transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg hover:text-forest-900 hover:border-forest-900"
             asChild
           >
             <Link href="/experience">View Details</Link>

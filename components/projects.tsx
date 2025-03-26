@@ -46,11 +46,11 @@ export function Projects() {
           technologies.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 ">
           {projects.map((project, index) => (
             <Card
               key={index}
-              className="overflow-hidden flex flex-col h-full transition-all duration-300 hover:shadow-lg border border-gray-100"
+              className="overflow-hidden flex flex-col h-full border-[0.01px] border-forest-100 shadow-md transform transition-all duration-500 hover:scale-105 hover:brightness-110 hover:shadow-lg hover:border-forest-900"
             >
               <div className="relative h-48 w-full">
                 <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />
@@ -71,7 +71,7 @@ export function Projects() {
               <CardFooter className="flex gap-2">
                 <Button
                   variant="outline"
-                  className="flex-1 gap-2 border-forest-200 text-forest-900 hover:bg-forest-900/10"
+                  className="flex-1 gap-2 border-forest-200 text-forest-900 hover:bg-forest-900 hover:text-white"
                   asChild
                 >
                   <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
@@ -79,7 +79,7 @@ export function Projects() {
                     Code
                   </a>
                 </Button>
-                <Button className="flex-1 gap-2 bg-forest-900 hover:bg-forest-800 text-white" asChild>
+                <Button className="flex-1 gap-2 border-[0.02px] bg-forest-900 hover:bg-white hover:border-forest-950 hover:text-black text-white" asChild>
                   <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
                     <ExternalLink size={16} />
                     Demo
@@ -95,7 +95,7 @@ export function Projects() {
         <Button
             variant="outline"
             size="lg"
-            className="border-forest-200 text-forest-900 hover:bg-forest-900/10"
+            className= "boder-[0.02px] border-forest-100 hover:text-forest-950 bg-forest-950 text-white hover:bg-white shadow-md transform transition-all duration-300 hover:scale-105 hover:shadow-lg hover:border-forest-900"
             asChild
           >
             <Link href="./projects">View All Projects</Link>

@@ -22,6 +22,12 @@ export function Hero() {
 
     return () => clearInterval(typingInterval)
   }, [])
+  const scrollToAbout = () => {
+    const aboutSection = document.getElementById("about")
+    if (aboutSection) {
+      aboutSection.scrollIntoView({ behavior: "smooth" })
+    }
+  }
 
   const scrollToProjects = () => {
     const aboutSection = document.getElementById("projects")
@@ -65,11 +71,9 @@ export function Hero() {
           <Button
             variant="ghost"
             size="icon"
-            onClick={scrollToProjects}
+            onClick={scrollToAbout}
             aria-label="Scroll down"
-            //className="text-forest-900 hover:text-forest-700 w-14 h-14 rounded-full"
             className={`w-14 h-14 rounded-full ${isClicked ? "text-white" : "text-forest-900"}`}
-          
           >
             <ArrowDown  className={`w-6 h-6 transition-colors duration-300 ${
                 isClicked ? "text-white" : "text-forest-900"

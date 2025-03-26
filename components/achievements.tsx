@@ -54,7 +54,7 @@ export function Achievements() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
           {achievements.map((achievement) => (
-            <Card key={achievement.id} className="border border-gray-100">
+            <Card key={achievement.id} className="border border-forest-900 shadow-md ">
               <CardHeader className="flex flex-row items-start gap-4 pb-2">
                 <div className="mt-1 bg-forest-100 p-2 rounded-full">{getIcon(achievement.category)}</div>
                 <div>
@@ -76,7 +76,7 @@ export function Achievements() {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="gap-2 border-forest-200 text-forest-900 hover:bg-forest-900/10"
+                      className="gap-2 bg-forest-100 border-forest-900 text-forest-900 hover:bg-white hover:text-forest-900 hover:border-forest-900"
                       onClick={() => openImage(achievement.title, achievement.certificateImage!)}
                     >
                       <ImageIcon size={14} />
@@ -88,7 +88,7 @@ export function Achievements() {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="gap-2 border-forest-200 text-forest-900 hover:bg-forest-900/10"
+                      className="gap-2 bg-forest-100 border-forest-900 text-forest-900 hover:bg-forest-900/10"
                       onClick={() => openImage(achievement.title, achievement.pictureImage!)}
                     >
                       <Image size={14} />
@@ -100,7 +100,7 @@ export function Achievements() {
                     <Button
                       variant="outline"
                       size="sm"
-                      className="gap-2 border-forest-200 text-forest-900 hover:bg-forest-900/10"
+                      className="gap-2 transform transition-all bg-forest-950 text-white duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg hover:border-forest-700 "
                       asChild
                     >
                       <a href={achievement.url} target="_blank" rel="noopener noreferrer">
@@ -119,7 +119,7 @@ export function Achievements() {
           <Button
             variant="outline"
             size="lg"
-            className="border-forest-200 text-forest-900 hover:bg-forest-900/10"
+            className="transform transition-all hover:bg-white hover:text-forest-900 bg-forest-950 text-white duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg hover:border-forest-900"
             asChild
           >
             <Link href="/Achievements">View All Achievements</Link>

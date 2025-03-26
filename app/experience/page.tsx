@@ -112,7 +112,7 @@ export default function ExperiencePage() {
             Interested in my qualifications? Check out my achievements and certifications.
           </p>
           <Link href="/Achievements">
-            <Button size="lg" className="bg-forest-900 hover:bg-forest-800 text-white">
+            <Button size="lg" className="border-[0.02px]  border-forest-100 bg-forest-900 text-white hover:bg-white hover:text-forest-900 hover:border-forest-900">
               View Achievements
             </Button>
           </Link>

@@ -60,7 +60,7 @@ export function Skills() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="h-full border border-gray-100">
+            <Card key={index} className="h-full border-forest-950 border-[0.02px] shadow-md">
               <CardHeader className="flex flex-row items-center gap-4">
                 {category.icon}
                 <div>

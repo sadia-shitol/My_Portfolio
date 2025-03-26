@@ -247,7 +247,7 @@ export default function AchievementsPage() {
             <Button
               variant="outline"
               size="sm"
-              className="gap-2 border-forest-900 text-forest-900 hover:bg-forest-900/10"
+              className=" bg-forest-100 border-forest-200 text-forest-900 hover:bg-forest-900/10 hover:text-forest-900"
               onClick={() => openImage(achievement.title, achievement.certificateImage!)}
             >
               <ImageIcon size={14} />
@@ -259,7 +259,7 @@ export default function AchievementsPage() {
             <Button
               variant="outline"
               size="sm"
-              className="gap-2 border-forest-200 text-forest-900 hover:bg-forest-900/10"
+              className="gap-2 bg-forest-100 border-forest-200 text-forest-900 hover:bg-forest-900/10 hover:text-forest-900"
               onClick={() => openImage(achievement.title, achievement.pictureImage!)}
             >
               <Image size={14} />
@@ -329,7 +329,7 @@ export default function AchievementsPage() {
         <div className="mt-16 text-center">
           <p className="text-forest-900/80 mb-6">Want to learn more about my professional experience?</p>
           <Link href="/experience">
-            <Button size="lg" className="bg-forest-900 hover:bg-forest-800 text-white">
+            <Button size="lg" className="transform transition-all border-[0.02px] hover:border-forest-900 hover:bg-white hover:text-forest-900 bg-forest-950 text-white duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg">
               View Work Experience
             </Button>
           </Link>

@@ -209,13 +209,13 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
         </div>
 
         <div className="flex flex-wrap gap-3 mb-8">
-          <Button variant="outline" className="gap-2 border-forest-200 text-forest-900 hover:bg-forest-900/10" asChild>
+          <Button variant="outline" className="gap-2  border-forest-200 text-forest-900 hover:bg-forest-900 hover:text-white" asChild>
             <a href={project.codeUrl} target="_blank" rel="noopener noreferrer">
               <Github size={16} />
               View Code
             </a>
           </Button>
-          <Button className="gap-2 bg-forest-900 hover:bg-forest-800 text-white" asChild>
+          <Button className="gap-2 border-[0.02px] bg-forest-900 hover:bg-white hover:border-forest-950 hover:text-black text-white" asChild>
             <a href={project.demoUrl} target="_blank" rel="noopener noreferrer">
               <ExternalLink size={16} />
               Live Demo
@@ -272,14 +272,14 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
 
         <div className="flex justify-between items-center pt-8 border-t border-gray-100">
           <Link href="/projects">
-            <Button variant="outline" className="gap-2 border-forest-200 text-forest-900 hover:bg-forest-900/10">
+            <Button variant="outline" className="gap-2  border-forest-900 text-forest-900 hover:bg-forest-900 hover:text-white">
               <ArrowLeft size={16} />
               Back to Projects
             </Button>
           </Link>
 
           <Link href="/#contact">
-            <Button className="gap-2 bg-forest-900 hover:bg-forest-800 text-white">Discuss This Project</Button>
+            <Button className="gap-2 border-[0.02px] bg-forest-900 hover:bg-white hover:border-forest-950 hover:text-black text-white">Discuss This Project</Button>
           </Link>
         </div>
       </div>
