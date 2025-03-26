@@ -6,7 +6,7 @@ export function Footer() {
   const currentYear = new Date().getFullYear()
 
   return (
-    <footer className="bg-forest-300 text-forest-900 py-12 border-t border-gray-100">
+    <footer className="bg-forest-300 text-forest-900 py-8 border-t border-gray-100">
     
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row justify-between items-center mb-8">
@@ -16,7 +16,8 @@ export function Footer() {
               Building digital experiences that make a difference. Let's work together on your next project.
             </p>
           </div>
-
+          <p className="text-forest-900/80 text-sm mb-4 md:mb-0">© {currentYear} Sadia Bintay Mostafiz. All rights reserved.</p>
+        
           <div className="flex gap-3">
             {[
               { icon: <Github size={20} />, label: "GitHub",url:"https://github.com/sadia-shitol" },
@@ -38,23 +39,9 @@ export function Footer() {
               </Button>
             ))}
           </div>
+          
         </div>
-
-        <div className="border-t border-gray-100 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-forest-900/80 text-sm mb-4 md:mb-0">© {currentYear} Sadia Bintay Mostafiz. All rights reserved.</p>
-
-          <nav className="flex gap-6 text-sm">
-            <Link href="#" className="text-forest-900/80 hover:text-forest-900 transition-colors">
-              Privacy Policy
-            </Link>
-            <Link href="#" className="text-forest-900/80 hover:text-forest-900 transition-colors">
-              Terms of Service
-            </Link>
-            <Link href="#" className="text-forest-900/80 hover:text-forest-900 transition-colors">
-              Sitemap
-            </Link>
-          </nav>
-        </div>
+        
       </div>
     </footer>
   )
