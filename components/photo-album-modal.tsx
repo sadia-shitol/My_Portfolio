@@ -34,9 +34,7 @@ export function PhotoAlbumModal({ title, images, isOpen, onClose, initialImageIn
           <DialogTitle className="text-forest-900">
             {title} - {currentImage.title}
           </DialogTitle>
-          <Button variant="ghost" size="icon" onClick={onClose} className="text-forest-900 hover:bg-forest-900/10">
-            <X size={20} />
-          </Button>
+          
         </DialogHeader>
 
         <div className="relative flex-grow flex flex-col items-center justify-center my-4 overflow-hidden">
