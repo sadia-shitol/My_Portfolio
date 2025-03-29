@@ -74,13 +74,13 @@ export function Navbar() {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-white/95 backdrop-blur-md">
+        <div className="md:hidden bg-white/95 backdrop-blur-md border-[0.2px] border-black/10">
           <div className="container mx-auto px-4 py-4 flex flex-col space-y-4">
             {["about", "experience", "projects", "skills", "achievements", "contact"].map((item) => (
               <button
                 key={item}
                 onClick={() => scrollToSection(item)}
-                className="text-forest-900/80 hover:text-forest-900 py-2 capitalize transition-colors"
+                className="text-forest-900/80 hover:text-forest-900 py-2  border hover:bg-forest-200 shadow-sm capitalize transition-colors"
               >
                 {item}
               </button>

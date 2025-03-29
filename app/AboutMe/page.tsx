@@ -66,8 +66,8 @@ export default function AboutPage() {
               </p>
               <p className="text-forest-900/90 mb-4">
                 Beyond my professional pursuits, I'm passionate about photography and painting, which allow me to
-                express my creativity in different mediums. I believe that my artistic background enhances my approach
-                to web development, particularly in UI/UX design.
+                express my creativity in different mediums. I believe that my artistic background will enhance my approach
+                to web design and development as well.
               </p>
               <p className="text-black">
               Currently I am a student and pursuing my undergraduate degree in Coputer Science and Engineering at Military Institute of Science and Technology.
