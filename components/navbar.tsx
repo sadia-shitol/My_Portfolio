@@ -85,7 +85,7 @@ export function Navbar() {
                 {item}
               </button>
             ))}
-             <a href="https://drive.google.com/file/d/1E0XCgH2wUtZrAFCJ3cTXcF_0M1eNUUNC/view" className=" flex items-center gap-2">
+             <a href="https://drive.google.com/file/d/1aD6sw_FbHAZlHOtGgopJekMX4Bk13l7F/view" className=" flex items-center gap-2">
           <Button className="w-full bg-forest-900 hover:bg-forest-800 text-white">
              Resume</Button>
              </a>

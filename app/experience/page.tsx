@@ -23,7 +23,7 @@ export default function ExperiencePage() {
           </div>
 
           <Button className="gap-2 bg-forest-900 hover:bg-forest-800 text-white" asChild>
-            <a href="https://drive.google.com/file/d/1E0XCgH2wUtZrAFCJ3cTXcF_0M1eNUUNC/view" download="Sadia_Bintay_Mostafiz_CV.pdf"  className=" flex items-center gap-2">
+            <a href="https://drive.google.com/file/d/1aD6sw_FbHAZlHOtGgopJekMX4Bk13l7F/view" download="Sadia_Bintay_Mostafiz_CV.pdf"  className=" flex items-center gap-2">
             Download CV
                </a>
           </Button>
