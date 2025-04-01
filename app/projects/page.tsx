@@ -60,6 +60,16 @@ const projects = [
     codeUrl: "https://github.com/sadia-shitol/Through-The-Rythm-of-Life",
      detailsUrl: "projects/rythmofLife"
   },
+  {
+    id:"portfolio",
+    title: "Personal Portfolio Website",
+    description: "This project showcases all my educational qualifications, achievements, experiences, expertises",
+    image: "../images/portfolio.png?height=400&width=600",
+    tags: ["React","Next.js","Tailwind CSS","Typescript"],
+    detailsUrl: "projects/portfolio",
+    demoUrl: "https://my-portfolio-wpv9.vercel.app/",
+    codeUrl: "https://github.com/sadia-shitol/My_Portfolio",
+  },
 ]
 
 export default function ProjectsPage() {

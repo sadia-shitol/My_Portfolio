@@ -156,6 +156,27 @@ const projects = [
       "Can gain more knowledge about 3D computer Graphics and animation"
     ],
   },
+
+  {
+    id:"portfolio",
+    title: "Personal Portfolio Website!",
+    longDescription: "This project showcases my educational qualifications, achievements, experiences, expertises",
+    image: "../images/portfolio.png?height=400&width=600",
+    tags: ["React","Next.js","Tailwind CSS","Typescript"],
+    detailsUrl: "projects/portfolio",
+    demoUrl: "https://my-portfolio-wpv9.vercel.app/",
+    codeUrl: "https://github.com/sadia-shitol/My_Portfolio",
+    features: [
+      "Basically a demonstration of  my education, expertises, experiences and achievements.",
+      
+    ],
+    challenges: [
+      "Hosting the website"
+    ],
+    solutions: [
+      " Will try to add more detailes"
+    ],
+  },
 ]
 
 export default function ProjectDetailPage({ params }: { params: { id: string } }) {
