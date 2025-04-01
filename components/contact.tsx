@@ -2,7 +2,7 @@
 import Link from "next/link"
 import type React from "react"
 import { useState } from "react"
-import { Mail, MapPin, Phone, Send } from "lucide-react"
+import { Mail, MapPin, Phone, Linkedin } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 export function Contact() {
@@ -19,12 +19,21 @@ export function Contact() {
           contact information.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <Card className="border border-gray-100 shadow-md transform transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg  hover:border-forest-700">
+         <CardContent className="p-6 flex items-center gap-4 " >
+           <a href="https://www.linkedin.com/in/sadia-bintay-mostafiz-b4177a267/" className="bg-forest-900/10 p-3 rounded-full">
+                <Linkedin className="h-6 w-6 text-forest-900" />
+            </a>
+             <div>
+        <h3 className="font-medium text-forest-900">Linkedin</h3>
+        <p className="text-sm text-forest-900/90">Sadia Bintay Mostafiz</p>
+      </div>
+        </CardContent>
+  </Card>
+  
   <Card className="border border-gray-100 shadow-md transform transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg  hover:border-forest-700">
     <CardContent className="p-6 flex items-center gap-4 " >
-      {/* <div className="bg-forest-900/10 p-3 rounded-full">
-        <Mail className="h-6 w-6 text-forest-900" />
-      </div> */}
       <a href="mailto:shitol3080@gmail.com" className="bg-forest-900/10 p-3 rounded-full">
                 <Mail className="h-6 w-6 text-forest-900" />
               </a>
@@ -58,9 +67,7 @@ export function Contact() {
       </div>
     </CardContent>
   </Card>
-</div>
-
-
+  </div>
       </div>
     </section>
   )
