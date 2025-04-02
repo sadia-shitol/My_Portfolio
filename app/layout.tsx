@@ -26,11 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className="font-serif">   
          {children}
-
       </body>
-      {/* <body className={`${poppins.className} ${poppins.variable}`}>
-        {children}
-      </body> */}
     </html>
   )
 }
