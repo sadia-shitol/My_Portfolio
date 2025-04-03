@@ -140,10 +140,6 @@ export default function ProjectsPage() {
                       className="gap-2 text-black border-[0.001px] border-black bg-forest-100  hover:bg-forest-900 hover:text-white"
                       asChild
                     >
-                      {/* <Link href={`/projects/`}>
-                        <Info size={16} />
-                        Details
-                      </Link> */}
                       <a href={project.detailsUrl} target="_blank" rel="noopener noreferrer">
                         <Info size={16} />
                         Details

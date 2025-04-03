@@ -276,7 +276,7 @@ export default function ProjectDetailPage({ params }: { params: { id: string } }
 
             <Card>
               <CardContent className="pt-6">
-                {/* Solution variable used for Future Scope */}
+                {/* Solution variable is used for Future Scope */}
                 <h3 className="text-xl font-bold text-forest-900 mb-4">Future Scope</h3>
                 <ul className="space-y-2">
                   {project.solutions.map((solution, index) => (
