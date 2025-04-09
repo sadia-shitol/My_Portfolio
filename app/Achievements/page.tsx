@@ -150,8 +150,8 @@ export default function AchievementsPage() {
             {education.map(renderAchievementCard)}
           </TabsContent>
           {/* </TabsContent> */}
-//           {/* FUTUTRE IMPLEMENTATION INN SHAA ALLAH */}
-//           {/* <TabsContent value="publications" className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      {/* FUTUTRE IMPLEMENTATION INN SHAA ALLAH */}
+               {/* <TabsContent value="publications" className="grid grid-cols-1 md:grid-cols-2 gap-6">
 //             {publications.map(renderAchievementCard)}
 //           </TabsContent> */}
         </Tabs>
