@@ -51,7 +51,7 @@ export default function AboutPage() {
         <section className="mb-16">
           <div className="flex flex-col md:flex-row gap-8 items-center md:items-start">
             <div className="w-48 h-48 relative rounded-full overflow-hidden border-[0.02px] border-black flex-shrink-0">
-            <Image  src="/images/portfolio.jpg"  alt="Sadia Bintay Mostafiz"
+            <Image  src="/images/shitol.jpg"  alt="Sadia Bintay Mostafiz"
             fill
             className="object-cover"
             priority/>
