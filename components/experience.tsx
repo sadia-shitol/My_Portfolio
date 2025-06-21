@@ -1,52 +1,65 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Calendar, MapPin } from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
-import { Badge } from "@/components/ui/badge"
-import { getAllExperiences } from "@/data/experience"
+import Image from 'next/image'
+import Link from 'next/link'
+import { Calendar, MapPin } from 'lucide-react'
+import { Button } from '@/components/ui/button'
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from '@/components/ui/card'
+import { Badge } from '@/components/ui/badge'
+import { getAllExperiences } from '@/data/experience'
 
 export function Experience() {
   const allExperiences = getAllExperiences()
   // Show only the most recent 3 experiences on the homepage
-  const experiences = allExperiences.slice(0, 3)
+  const experiences = allExperiences.slice(0, 4)
 
   return (
-    <section id="experience" className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-4 text-forest-900">
-          Work <span className="text-forest-700">Experience</span>
+    <section id='experience' className='py-20 bg-white'>
+      <div className='container mx-auto px-4'>
+        <h2 className='text-3xl md:text-4xl font-bold text-center mb-4 text-forest-900'>
+          Work <span className='text-forest-700'>Experience</span>
         </h2>
-        <p className="text-forest-900/90 text-center max-w-2xl mx-auto mb-12">
-          My professional journey includes working with diverse teams and technologies to deliver impactful solutions.
+        <p className='text-forest-900/90 text-center max-w-2xl mx-auto mb-12'>
+          My professional journey includes working with diverse teams and
+          technologies to deliver impactful solutions.
         </p>
 
-        <div className="space-y-6 max-w-4xl mx-auto">
+        <div className='space-y-6 max-w-4xl mx-auto'>
           {experiences.map((experience) => (
-            <Card key={experience.id} className="border-[0.02px] border-forest-900">
-              <CardHeader className="flex flex-col md:flex-row gap-4 md:items-center">
+            <Card
+              key={experience.id}
+              className='border-[0.02px] border-forest-900'
+            >
+              <CardHeader className='flex flex-col md:flex-row gap-4 md:items-center'>
                 {experience.logo && (
-                  <div className="w-16 h-16 relative flex-shrink-0">
+                  <div className='w-16 h-16 relative flex-shrink-0'>
                     <Image
-                      src={experience.logo || "/placeholder.svg"}
+                      src={experience.logo || '/placeholder.svg'}
                       alt={experience.company}
                       fill
-                      className="object-contain"
+                      className='object-contain'
                     />
                   </div>
                 )}
-                <div className="space-y-1">
-                  <CardTitle className="text-forest-900">{experience.title}</CardTitle>
-                  <CardDescription className="text-forest-900/90">
-                    <span className="font-medium">{experience.company}</span>
-                    <div className="flex flex-wrap items-center gap-x-3 gap-y-1 mt-1">
-                      <div className="flex items-center text-sm text-forest-900/80">
-                        <Calendar className="mr-1 h-3 w-3 text-forest-950" />
-                        {experience.startDate} - {experience.endDate || "Present"}
+                <div className='space-y-1'>
+                  <CardTitle className='text-forest-900'>
+                    {experience.title}
+                  </CardTitle>
+                  <CardDescription className='text-forest-900/90'>
+                    <span className='font-medium'>{experience.company}</span>
+                    <div className='flex flex-wrap items-center gap-x-3 gap-y-1 mt-1'>
+                      <div className='flex items-center text-sm text-forest-900/80'>
+                        <Calendar className='mr-1 h-3 w-3 text-forest-950' />
+                        {experience.startDate} -{' '}
+                        {experience.endDate || 'Present'}
                       </div>
                       {experience.location && (
-                        <div className="flex items-center text-sm text-forest-950">
-                          <MapPin className="mr-1 h-3 w-3 text-forest-900/80" />
+                        <div className='flex items-center text-sm text-forest-950'>
+                          <MapPin className='mr-1 h-3 w-3 text-forest-900/80' />
                           {experience.location}
                         </div>
                       )}
@@ -55,17 +68,26 @@ export function Experience() {
                 </div>
               </CardHeader>
               <CardContent>
-                <p className="text-forest-900/80 mb-4">{experience.description}</p>
+                <p className='text-forest-900/80 mb-4'>
+                  {experience.description}
+                </p>
 
-                <div className="space-y-3">
-                  <h4 className="text-sm font-medium text-forest-900">Key Responsibilities:</h4>
-                  <ul className="list-disc pl-5 space-y-1 text-forest-900/90">
-                    {experience.responsibilities.slice(0, 3).map((responsibility, index) => (
-                      <li key={index}>{responsibility}</li>
-                    ))}
+                <div className='space-y-3'>
+                  <h4 className='text-sm font-medium text-forest-900'>
+                    Key Responsibilities:
+                  </h4>
+                  <ul className='list-disc pl-5 space-y-1 text-forest-900/90'>
+                    {experience.responsibilities
+                      .slice(0, 3)
+                      .map((responsibility, index) => (
+                        <li key={index}>{responsibility}</li>
+                      ))}
                     {experience.responsibilities.length > 3 && (
                       <li>
-                        <Link href={`/experience#${experience.id}`} className="text-forest-900 hover:underline">
+                        <Link
+                          href={`/experience#${experience.id}`}
+                          className='text-forest-900 hover:underline'
+                        >
                           View more...
                         </Link>
                       </li>
@@ -73,14 +95,21 @@ export function Experience() {
                   </ul>
                 </div>
 
-                <div className="flex flex-wrap gap-2 mt-4">
+                <div className='flex flex-wrap gap-2 mt-4'>
                   {experience.technologies.slice(0, 5).map((tech) => (
-                    <Badge key={tech} variant="outline" className="text-forest-900 border-forest-900/40">
+                    <Badge
+                      key={tech}
+                      variant='outline'
+                      className='text-forest-900 border-forest-900/40'
+                    >
                       {tech}
                     </Badge>
                   ))}
                   {experience.technologies.length > 5 && (
-                    <Badge variant="outline" className="text-forest-900 border-forest-200">
+                    <Badge
+                      variant='outline'
+                      className='text-forest-900 border-forest-200'
+                    >
                       +{experience.technologies.length - 5}
                     </Badge>
                   )}
@@ -90,18 +119,17 @@ export function Experience() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className='text-center mt-12'>
           <Button
-            variant="outline"
-            size="lg"
-            className="bg-forest-900 text-white hover:bg-white shadow-md transform transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg hover:text-forest-900 hover:border-forest-900"
+            variant='outline'
+            size='lg'
+            className='bg-forest-900 text-white hover:bg-white shadow-md transform transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg hover:text-forest-900 hover:border-forest-900'
             asChild
           >
-            <Link href="/experience">View Details</Link>
+            <Link href='/experience'>View Details</Link>
           </Button>
         </div>
       </div>
     </section>
   )
 }
-
