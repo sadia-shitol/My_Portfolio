@@ -65,8 +65,8 @@ export function Navbar() {
           ))}
 
           <a
-            href='https://drive.google.com/file/d/1JgGcMElJrgK-0mWjN8SozAIqzVHtv-PA/view'
-            download='Sadia_Bintay_Mostafiz_Shitol_CV.pdf'
+            href='https://drive.google.com/file/d/1FZkhnhimr8LykM3F34q2ZWUO7M8AH0qp/view'
+            download='Sadia_Bintay_Mostafiz_Shitols_CV.pdf'
             className=' flex items-center gap-2'
           >
             <Button className='w-full bg-forest-900 shadow-md hover:bg-white text-white transform transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg  hover:text-forest-900'>

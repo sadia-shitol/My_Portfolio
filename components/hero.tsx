@@ -59,7 +59,7 @@ export function Hero() {
             onClick={scrollToProjects}
             className='bg-forest-900 shadow-md hover:bg-forest-100 text-white hover:text-forest-900 transform transition-all duration-300 hover:scale-105 hover:brightness-110 hover:shadow-lg  hover:border-forest-700'
           >
-            View My Work
+            View My Works
           </Button>
           <Button
             size='lg'
