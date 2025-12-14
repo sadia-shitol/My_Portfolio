@@ -427,15 +427,15 @@ export const hobbies: Hobby[] = [
         fullSrc:
           './images/Hobby_paintings/peaceaAndu.jpg?height=800&width=1200&text=Seascape',
       },
-      {
-        id: 'painting2',
-        title: 'Home',
-        description: 'A place where all happiness lies in',
-        thumbnailSrc:
-          './images/Hobby_paintings/Home.jpg?height=300&width=400&text=Watercolor+Landscape',
-        fullSrc:
-          './images/Hobby_paintings/Home.jpg?height=800&width=1200&text=Watercolor+Landscape',
-      },
+      // {
+      //   id: 'painting2',
+      //   title: 'Home',
+      //   description: 'A place where all happiness lies in',
+      //   thumbnailSrc:
+      //     './images/Hobby_paintings/Home.jpg?height=300&width=400&text=Watercolor+Landscape',
+      //   fullSrc:
+      //     './images/Hobby_paintings/Home.jpg?height=800&width=1200&text=Watercolor+Landscape',
+      // },
 
       {
         id: 'painting3',
@@ -484,15 +484,15 @@ export const hobbies: Hobby[] = [
         fullSrc:
           './images/Hobby_paintings/TheArtPalette.jpg?height=800&width=1200&text=Urban+Sketch',
       },
-      {
-        id: 'painting8',
-        title: 'meow',
-        description: 'just a happy cat!',
-        thumbnailSrc:
-          './images/Hobby_paintings/meow.jpg?height=300&width=400&text=Still+Life',
-        fullSrc:
-          './images/Hobby_paintings/meow.jpg?height=800&width=1200&text=Still+Life',
-      },
+      // {
+      //   id: 'painting8',
+      //   title: 'meow',
+      //   description: 'just a happy cat!',
+      //   thumbnailSrc:
+      //     './images/Hobby_paintings/meow.jpg?height=300&width=400&text=Still+Life',
+      //   fullSrc:
+      //     './images/Hobby_paintings/meow.jpg?height=800&width=1200&text=Still+Life',
+      // },
       {
         id: 'painting9',
         title: 'The neverending War',
@@ -617,15 +617,15 @@ export const hobbies: Hobby[] = [
         fullSrc:
           './images/Hobby_paintings/canvasSunset.jpg?height=800&width=1200&text=Still+Life',
       },
-      {
-        id: 'painting25',
-        title: 'ScarryStarry',
-        description: 'Vangoghs starry night...',
-        thumbnailSrc:
-          './images/Hobby_paintings/Starry.jpg?height=300&width=400&text=Still+Life',
-        fullSrc:
-          './images/Hobby_paintings/Starry.jpg?height=800&width=1200&text=Still+Life',
-      },
+      // {
+      //   id: 'painting25',
+      //   title: 'ScarryStarry',
+      //   description: 'Vangoghs starry night...',
+      //   thumbnailSrc:
+      //     './images/Hobby_paintings/Starry.jpg?height=300&width=400&text=Still+Life',
+      //   fullSrc:
+      //     './images/Hobby_paintings/Starry.jpg?height=800&width=1200&text=Still+Life',
+      // },
       {
         id: 'painting26',
         title: 'Orange',
